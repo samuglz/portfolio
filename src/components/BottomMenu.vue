@@ -18,7 +18,7 @@
                 />
                 <span class="px-1">main</span>
             </div>
-            <div class="flex mx-3">
+            <div class="flex mx-3 pr-2">
                 <img
                     class="w-4 h-5"
                     src="../assets/img/Sync_Icon.svg"
