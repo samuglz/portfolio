@@ -1,5 +1,5 @@
 <template>
-    <div class="w-14 flex flex-col justify-between items-center">
+    <div class="w-24 flex flex-col justify-between items-center">
         <div class="flex flex-col items-center">
             <Documents />
             <Search />
@@ -13,13 +13,23 @@
     </div>
 </template>
 
-<script setup>
+<script>
 import Documents from './Buttons/Documents.vue';
 import Search from './Buttons/Search.vue';
 import Git from './Buttons/Git.vue';
 import Extensions from './Buttons/Extensions.vue';
 import Github from './Buttons/Github.vue';
 import Profile from './Buttons/Profile.vue';
+export default {
+    components: {
+        Documents,
+        Search,
+        Git,
+        Extensions,
+        Github,
+        Profile
+    }
+};
 </script>
 
 <style></style>

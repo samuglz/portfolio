@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen h-screen bg-background">
+    <div class="w-screen h-screen bg-background select-none">
         <TopMenu />
         <CenterScreen />
         <BottomMenu />
