@@ -1,0 +1,25 @@
+<template>
+    <div class="w-14 flex flex-col justify-between items-center">
+        <div class="flex flex-col items-center pt-5">
+            <Documents />
+            <Search />
+            <Git />
+            <Extensions />
+            <Github />
+        </div>
+        <div>
+            <Profile />
+        </div>
+    </div>
+</template>
+
+<script setup>
+import Documents from './Buttons/Documents.vue';
+import Search from './Buttons/Search.vue';
+import Git from './Buttons/Git.vue';
+import Extensions from './Buttons/Extensions.vue';
+import Github from './Buttons/Github.vue';
+import Profile from './Buttons/Profile.vue';
+</script>
+
+<style></style>
