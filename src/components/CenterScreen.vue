@@ -1,11 +1,13 @@
 <template>
     <div class="h-total w-full flex">
         <LeftMenu />
+        <CodeSection />
     </div>
 </template>
 
 <script setup>
 import LeftMenu from './LeftMenu.vue';
+import CodeSection from './CodeSection.vue';
 </script>
 
 <style scoped>
