@@ -40,7 +40,7 @@ export default {
         const changeColor = value => {
             color.value = value;
         };
-        return { changeColor, changeSection };
+        return { changeColor, changeSection, color };
     }
 };
 </script>
