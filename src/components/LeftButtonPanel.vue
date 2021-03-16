@@ -1,6 +1,6 @@
 <template>
     <div class="w-14 flex flex-col justify-between items-center">
-        <div class="flex flex-col items-center pt-5">
+        <div class="flex flex-col items-center">
             <Documents />
             <Search />
             <Git />

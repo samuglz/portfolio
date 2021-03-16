@@ -1,13 +1,6 @@
 <template>
     <div class="flex w-full py-2">
-        <div class="w-1/12 flex justify-evenly items-center">
-            <CloseButton />
-            <MinimizeButton />
-            <MaximizeButton />
-        </div>
-        <div
-            class="w-11/12 text-center text-menu-color sm:text-sm lg:text-base"
-        >
+        <div class="w-full text-center text-menu-color sm:text-sm lg:text-base">
             Samuel González - Portfolio
         </div>
     </div>
