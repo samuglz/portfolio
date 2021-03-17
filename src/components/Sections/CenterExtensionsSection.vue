@@ -10,6 +10,9 @@
                 <div class="px-2" v-for="n in rate" :key="n">
                     <Rating class="w-14 h-14" />
                 </div>
+                <div class="px-2" v-for="n in 5 - rate" :key="n">
+                    <StrokeRating class="w-14 h-14" />
+                </div>
             </div>
         </div>
     </div>
@@ -26,6 +29,7 @@ import React from '../Icons/React.vue';
 import Figma from '../Icons/Figma.vue';
 import Git from '../Icons/Git.vue';
 import Rating from '../Icons/Rating.vue';
+import StrokeRating from '../Icons/StrokeRating.vue';
 export default {
     name: 'CenterExtensionsSection',
     components: {
@@ -36,7 +40,8 @@ export default {
         React,
         Vue,
         Figma,
-        Rating
+        Rating,
+        StrokeRating
     },
     setup() {
         const extension = ref('a');
