@@ -1,5 +1,5 @@
 <template>
-    <div class="w-24 flex flex-col justify-between items-center">
+    <div class="w-20 flex flex-col justify-between items-center">
         <div class="flex flex-col items-center">
             <Documents />
             <Search />

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-full">
+    <div class="w-52 h-full">
         <keep-alive>
             <component :is="section"></component>
         </keep-alive>
