@@ -3,7 +3,7 @@
         <div
             v-for="skill in dataSkills"
             :key="skill.id"
-            class="w-full h-24 flex flex-col justify-center bg-background hover:bg-coolGray-700 cursor-pointer"
+            class="w-full h-24 flex flex-col justify-center bg-background hover:bg-coolGray-700 cursor-pointer border-b border-black"
         >
             <h1 class="w-full text-menu-color font-bold text-lg mx-2">
                 {{ skill.text }}
