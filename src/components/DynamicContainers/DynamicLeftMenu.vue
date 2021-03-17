@@ -1,6 +1,8 @@
 <template>
     <div class="w-full h-full">
-        <component :is="section"></component>
+        <keep-alive>
+            <component :is="section"></component>
+        </keep-alive>
     </div>
 </template>
 
