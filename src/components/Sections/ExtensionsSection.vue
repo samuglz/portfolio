@@ -4,6 +4,7 @@
             v-for="skill in dataSkills"
             :key="skill.id"
             class="w-full h-24 flex flex-col justify-center bg-background hover:bg-coolGray-700 cursor-pointer border-b border-black"
+            @click="selectExtension(skill)"
         >
             <h1 class="w-full text-menu-color font-bold text-lg mx-2">
                 {{ skill.text }}
@@ -27,11 +28,19 @@
 
 <script>
 import { skills } from '../../data.js';
+import { event } from '../../Events';
 export default {
     name: 'ExtensionsSection',
     setup() {
+        const selectExtension = skill => {
+            event.emit('changeCenterScreen', {
+                newSection: 'CenterExtensionsSection',
+                extensionToShow: skill
+            });
+        };
+
         const dataSkills = skills;
-        return { dataSkills };
+        return { dataSkills, selectExtension };
     }
 };
 </script>

@@ -1,7 +1,17 @@
 <template>
-    <div class="w-full h-full bg-dark-background"></div>
+    <div class="w-full h-full bg-dark-background">
+        <DynamicCenterScreen />
+    </div>
 </template>
 
-<script setup></script>
+<script>
+import DynamicCenterScreen from './DynamicContainers/DynamicCenterScreen.vue';
+export default {
+    name: 'Code Section',
+    components: {
+        DynamicCenterScreen
+    }
+};
+</script>
 
 <style></style>
