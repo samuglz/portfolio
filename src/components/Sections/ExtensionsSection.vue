@@ -7,7 +7,7 @@
             @click="selectExtension(skill)"
         >
             <h1 class="w-full text-menu-color font-bold text-lg mx-2">
-                {{ skill.text }}
+                {{ skill.icon }}
             </h1>
             <p class="description text-xs w-44 text-menu-color py-1 mx-2">
                 {{ t(skill.description) }}

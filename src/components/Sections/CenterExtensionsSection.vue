@@ -1,6 +1,6 @@
 <template>
     <div class="w-full h-full flex flex-col justify-center items-center">
-        <component :is="text"></component>
+        <component :is="icon"></component>
         <!-- <h1 class="text-menu-color text-6xl text-center pt-5">
             {{ extension }}
         </h1> -->
@@ -45,7 +45,7 @@ export default {
         StrokeRating
     },
     props: {
-        text: {
+        icon: {
             type: String
         },
         id: {
