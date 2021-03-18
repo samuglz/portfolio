@@ -10,6 +10,7 @@
 import TopMenu from './components/TopMenu.vue';
 import BottomMenu from './components/BottomMenu.vue';
 import CenterScreen from './components/CenterScreen.vue';
+import { useI18n } from 'vue-i18n';
 export default {
     name: 'App',
     components: {

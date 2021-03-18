@@ -5,7 +5,7 @@
             {{ extension }}
         </h1> -->
         <div class="py-10 w-3/4 flex flex-col justify-center items-center">
-            <div class="text-xl text-menu-color">{{ description }}</div>
+            <div class="text-xl text-menu-color">{{ t(description) }}</div>
             <div class="mt-20 flex justify-center items-center">
                 <div class="px-2" v-for="n in rate" :key="n">
                     <Rating class="w-14 h-14" />
@@ -30,6 +30,7 @@ import Figma from '../Icons/Figma.vue';
 import Git from '../Icons/Git.vue';
 import Rating from '../Icons/Rating.vue';
 import StrokeRating from '../Icons/StrokeRating.vue';
+import { useI18n } from 'vue-i18n';
 export default {
     name: 'CenterExtensionsSection',
     components: {
@@ -47,14 +48,14 @@ export default {
         const extension = ref('a');
         const description = ref('');
         const rate = ref(0);
-
+        const { t } = useI18n();
         event.on('extensionToShow', extensionToShow => {
             extension.value = extensionToShow.text;
             description.value = extensionToShow.description;
             rate.value = extensionToShow.rate;
         });
 
-        return { extension, description, rate };
+        return { extension, description, rate, t };
     }
 };
 </script>

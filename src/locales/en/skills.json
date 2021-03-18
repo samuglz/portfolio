@@ -1,0 +1,9 @@
+{
+    "css": "CSS is a graphic design language to define and create the presentation of a structured document written in a markup language",
+    "figma": "Figma is a vector graphics editor and prototyping tool that is primarily web-based, with additional offline features enabled by desktop applications for macOS and Windows.",
+    "git": "Git is version control software designed by Linus Torvalds, with the efficiency, reliability and compatibility of application versioning in mind when they have a large number of source code files.",
+    "html": "HTML 5 is the fifth major revision of the basic language of the World Wide Web",
+    "js": "JavaScript is an interpreted programming language, dialect of the ECMAScript standard. It is defined as object-oriented, prototype-based, imperative, loosely typed, and dynamic.",
+    "react": "React is an open source Javascript library designed to create user interfaces with the aim of facilitating application development on a single page. It is maintained by Facebook and the free software community. There are more than a thousand free developers in the project.",
+    "vue": "Vue.js is an open source JavaScript framework for building user interfaces and single page applications."
+}
