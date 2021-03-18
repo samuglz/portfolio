@@ -1,14 +1,17 @@
 <template>
     <div class="w-full h-full flex justify-center items center">
         <keep-alive>
-            <component :is="section"></component>
+            <component
+                :is="sectionToShow.name"
+                v-bind="sectionToShow.props"
+            ></component>
         </keep-alive>
     </div>
 </template>
 
 <script>
 import CenterExtensionsSection from '../Sections/CenterExtensionsSection.vue';
-import { ref } from 'vue';
+import { reactive } from 'vue';
 import { event } from '../../Events';
 export default {
     name: 'DynamicCenterScreen',
@@ -16,16 +19,12 @@ export default {
         CenterExtensionsSection
     },
     setup() {
-        const section = ref('ExplorerSection');
-
-        event.on('changeCenterScreen', ({ newSection, extensionToShow }) => {
-            section.value = newSection;
-            setTimeout(() => {
-                event.emit('extensionToShow', extensionToShow);
-            }, 1);
+        const sectionToShow = reactive({ name: 'ExplorerSection' });
+        event.on('changeCenterScreen', ({ newSection, componentProps }) => {
+            sectionToShow.name = newSection;
+            sectionToShow.props = { ...componentProps };
         });
-
-        return { section };
+        return { sectionToShow };
     }
 };
 </script>

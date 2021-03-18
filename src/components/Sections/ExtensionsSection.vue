@@ -36,7 +36,7 @@ export default {
         const selectExtension = skill => {
             event.emit('changeCenterScreen', {
                 newSection: 'CenterExtensionsSection',
-                extensionToShow: skill
+                componentProps: skill
             });
         };
         const { t } = useI18n();

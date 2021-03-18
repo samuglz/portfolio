@@ -1,11 +1,13 @@
 <template>
     <div class="w-full h-full flex flex-col justify-center items-center">
-        <component :is="extension"></component>
+        <component :is="text"></component>
         <!-- <h1 class="text-menu-color text-6xl text-center pt-5">
             {{ extension }}
         </h1> -->
         <div class="py-10 w-3/4 flex flex-col justify-center items-center">
-            <div class="text-xl text-menu-color">{{ t(description) }}</div>
+            <div class="text-xl text-menu-color">
+                {{ t(description) }}
+            </div>
             <div class="mt-20 flex justify-center items-center">
                 <div class="px-2" v-for="n in rate" :key="n">
                     <Rating class="w-14 h-14" />
@@ -19,8 +21,6 @@
 </template>
 
 <script>
-import { event } from '../../Events';
-import { ref } from 'vue';
 import HTML from '../Icons/HtmlIcon.vue';
 import CSS from '../Icons/CSS.vue';
 import JS from '../Icons/Javascript.vue';
@@ -44,18 +44,23 @@ export default {
         Rating,
         StrokeRating
     },
+    props: {
+        text: {
+            type: String
+        },
+        id: {
+            type: Number
+        },
+        description: {
+            type: String
+        },
+        rate: {
+            type: Number
+        }
+    },
     setup() {
-        const extension = ref('a');
-        const description = ref('');
-        const rate = ref(0);
         const { t } = useI18n();
-        event.on('extensionToShow', extensionToShow => {
-            extension.value = extensionToShow.text;
-            description.value = extensionToShow.description;
-            rate.value = extensionToShow.rate;
-        });
-
-        return { extension, description, rate, t };
+        return { t };
     }
 };
 </script>
