@@ -18,7 +18,7 @@
         <div class="px-2">{{ title }}</div>
     </div>
     <div
-        v-if="isOpen"
+        v-show="isOpen"
         class="flex py-2 w-full px-8 bg-background hover:bg-coolGray-700 cursor-pointer"
     >
         <img
