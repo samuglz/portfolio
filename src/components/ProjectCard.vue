@@ -20,6 +20,7 @@
     <div
         v-show="isOpen"
         class="flex py-2 w-full px-8 bg-background hover:bg-coolGray-700 cursor-pointer"
+        @click="openMarkdownFile"
     >
         <img
             class="w-4"
@@ -32,6 +33,7 @@
 
 <script>
 import { ref } from 'vue';
+import { event } from '../Events';
 export default {
     name: 'ProjectCard',
     props: {
@@ -44,12 +46,20 @@ export default {
             required: true
         }
     },
-    setup() {
+    setup(props) {
         const isOpen = ref(false);
         const openFolder = () => {
             isOpen.value = !isOpen.value;
         };
-        return { isOpen, openFolder };
+        const openMarkdownFile = fileName => {
+            event.emit('changeCenterScreen', {
+                newSection: 'MarkdownSection',
+                componentProps: {
+                    readmeFile: props.readmeFile
+                }
+            });
+        };
+        return { isOpen, openFolder, openMarkdownFile };
     }
 };
 </script>
