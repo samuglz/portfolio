@@ -42,3 +42,21 @@ export const skills = [
         rate: 3
     }
 ];
+
+export const projects = [
+    {
+        id: 1,
+        title: 'Coronavirus Stats',
+        readme: 'coronavirus'
+    },
+    {
+        id: 2,
+        title: 'Telepharma',
+        readme: 'telepharma'
+    },
+    {
+        id: 3,
+        title: 'Portfolio',
+        readme: 'portfolio'
+    }
+];

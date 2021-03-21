@@ -1,9 +1,9 @@
 <template>
-    <div @click="openMenu" class="cursor-pointer">
+    <div class="cursor-pointer">
         <svg
             @mouseover="changeColor('#FFFFFF')"
             @mouseleave="changeColor('#A6A7AA')"
-            v-if="isOpen"
+            v-if="opened"
             class="w-4 mr-3"
             viewBox="0 0 14 8"
             fill="none"
@@ -29,16 +29,17 @@
 import { ref } from 'vue';
 export default {
     name: 'ArrowButton',
+    props: {
+        opened: {
+            type: Boolean
+        }
+    },
     setup() {
-        const isOpen = ref(false);
-        const openMenu = () => {
-            isOpen.value = !isOpen.value;
-        };
         const color = ref('#A6A7AA');
         const changeColor = value => {
             color.value = value;
         };
-        return { isOpen, openMenu, changeColor, color };
+        return { changeColor, color };
     }
 };
 </script>
