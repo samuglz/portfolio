@@ -1,8 +1,14 @@
 <template>
-    <div class="text-menu-color">{{ projectName }}</div>
+    <div
+        class="text-menu-color font-bold flex justify-start w-full h-full py-2 overflow-y-scroll"
+    >
+        <pre v-html="info"></pre>
+    </div>
 </template>
 
 <script>
+import { reactive, computed } from 'vue';
+import { packages } from '../../data.js';
 export default {
     name: 'PackageSection',
     props: {
@@ -10,6 +16,10 @@ export default {
             type: String
         }
     },
-    setup() {}
+    setup(props) {
+        const packageDetails = reactive(packages);
+        const info = computed(() => packageDetails[props.projectName]);
+        return { info };
+    }
 };
 </script>
