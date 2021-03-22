@@ -1,5 +1,5 @@
 <template>
-    <div class="text-menu-color">{{ readmeFile }}</div>
+    <div class="text-menu-color">{{ projectName }}</div>
 </template>
 
 <script>

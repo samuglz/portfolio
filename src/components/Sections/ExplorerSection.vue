@@ -14,7 +14,7 @@
             <template v-for="project in dataProjects" :key="project.id">
                 <ProjectCard
                     :title="project.title"
-                    :readmeFile="project.readme"
+                    :projectName="project.readme"
                 />
             </template>
         </div>
