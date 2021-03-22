@@ -19,15 +19,11 @@
     </div>
     <div
         v-show="isOpen"
-        class="flex py-2 w-full px-8 bg-background hover:bg-coolGray-700 cursor-pointer"
+        class="flex py-2 w-full px-8 bg-background hover:bg-coolGray-700 cursor-pointer items-center"
         @click="openMarkdownFile"
     >
-        <img
-            class="w-4"
-            src="../assets/img/Mardown_Icon.svg"
-            alt="Markdown Icon"
-        />
-        <div class="text-sm px-2">README.md</div>
+        <img class="w-4" src="../assets/img/Npm_Icon.svg" alt="Markdown Icon" />
+        <div class="text-sm px-2">package.json</div>
     </div>
 </template>
 
@@ -41,7 +37,7 @@ export default {
             type: String,
             required: true
         },
-        readmeFile: {
+        projectName: {
             type: String,
             required: true
         }
@@ -51,11 +47,11 @@ export default {
         const openFolder = () => {
             isOpen.value = !isOpen.value;
         };
-        const openMarkdownFile = fileName => {
+        const openMarkdownFile = () => {
             event.emit('changeCenterScreen', {
-                newSection: 'MarkdownSection',
+                newSection: 'PackageSection',
                 componentProps: {
-                    readmeFile: props.readmeFile
+                    projectName: props.projectName
                 }
             });
         };

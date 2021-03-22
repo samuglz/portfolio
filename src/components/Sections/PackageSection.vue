@@ -4,9 +4,9 @@
 
 <script>
 export default {
-    name: 'MarkdownSection',
+    name: 'PackageSection',
     props: {
-        readmeFile: {
+        projectName: {
             type: String
         }
     },

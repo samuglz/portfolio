@@ -11,14 +11,14 @@
 
 <script>
 import CenterExtensionsSection from '../Sections/CenterExtensionsSection.vue';
-import MarkdownSection from '../Sections/MarkdownSection.vue';
+import PackageSection from '../Sections/PackageSection.vue';
 import { reactive } from 'vue';
 import { event } from '../../Events';
 export default {
     name: 'DynamicCenterScreen',
     components: {
         CenterExtensionsSection,
-        MarkdownSection
+        PackageSection
     },
     setup() {
         const sectionToShow = reactive({ name: 'ExplorerSection' });
