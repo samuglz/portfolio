@@ -42,10 +42,20 @@
                 <span class="px-2">0</span>
             </div>
         </div>
-        <div class="flex justify-end w-8/12 items-center px-2"></div>
+        <div class="flex justify-end w-8/12 items-center px-10">
+            <Translation />
+        </div>
     </div>
 </template>
 
-<script setup></script>
+<script>
+import Translation from './Translation.vue';
+export default {
+    name: 'BottomMenu',
+    components: {
+        Translation
+    }
+};
+</script>
 
 <style scoped></style>
