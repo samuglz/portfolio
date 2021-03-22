@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-full flex justify-center items center">
+    <div class="w-full h-full flex justify-center items center overflow-y-auto">
         <keep-alive>
             <component
                 :is="sectionToShow.name"
