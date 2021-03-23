@@ -12,13 +12,19 @@
         />
     </div>
     <div class="col-span-6 text-sm py-1 pl-4">
-        {{ description }}
+        {{ `(${t(type)}) ${description}` }}
     </div>
     <div class="text-sm py-1 col-span-2 pl-4 capitalize">
         {{
             index === 0
-                ? date
-                : day(`${date}`).locale(locale).format('MMM YYYY')
+                ? `${day(`${date.from}`).locale(locale).format('MMM YYYY')} - ${
+                      date.to
+                  }`
+                : `${day(`${date.from}`)
+                      .locale(locale)
+                      .format('MMM YYYY')} - ${day(`${date.to}`)
+                      .locale(locale)
+                      .format('MMM YYYY')}`
         }}
     </div>
     <div class="text-sm py-1 col-span-2 pl-4">Samuel González</div>
@@ -32,20 +38,20 @@ import 'dayjs/locale/es';
 import 'dayjs/locale/en';
 import dayjs from 'dayjs';
 import { useI18n } from 'vue-i18n';
-import { ref } from 'vue';
 export default {
     name: 'GitTableInfo',
     props: {
         index: { type: Number, required: true },
         totalCommits: { type: Number, required: true },
         description: { type: String, required: true },
-        date: { type: String, required: true },
-        hash: { type: String, required: true }
+        date: { type: Object, required: true },
+        hash: { type: String, required: true },
+        type: { type: String, required: true }
     },
     setup() {
         const day = dayjs;
-        const { locale } = useI18n();
-        return { day, locale };
+        const { locale, t } = useI18n();
+        return { day, locale, t };
     }
 };
 </script>

@@ -9,6 +9,7 @@
                     :description="commit.description"
                     :date="commit.date"
                     :hash="commit.hash"
+                    :type="commit.type"
                 />
             </template>
         </div>
