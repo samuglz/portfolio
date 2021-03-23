@@ -182,31 +182,59 @@ export const packages = {
 
 export const commitsInfo = [
     {
-        date: '2009-06',
+        date: {
+            from: '2007-09',
+            to: '2009-06'
+        },
         hash: '',
+        type: 'git.education',
         description: 'IES Punta Larga - Titulo De Bachillerato'
     },
     {
-        date: '2014-06',
+        date: {
+            from: '2009-09',
+            to: '2014-06'
+        },
         hash: '',
+        type: 'git.education',
         description:
             'Universidad de La Laguna - 144 créditos del título Grado en Ingeniería Informática.'
     },
     {
-        date: '2019-04',
+        date: {
+            from: '2015-03',
+            to: '2019-04'
+        },
         hash: '',
+        type: 'git.job',
         description: 'Correduría Grupo Gómez'
     },
     {
-        date: '2019-10',
+        date: {
+            from: '2019-04',
+            to: '2019-10'
+        },
         hash: '',
+        type: 'git.job',
         description: 'Vadeaguas'
     },
     {
-        date: '2020-05',
+        date: {
+            from: '2020-02',
+            to: '2020-05'
+        },
         hash: '',
+        type: 'git.education',
         description:
             'Escuela De Organización Industrial - Programación y Diseño Web Front-End'
     },
-    { date: 'Currently', description: 'Integra Cloud Technologies', hash: '' }
+    {
+        date: {
+            from: '2020-07',
+            to: 'Currently'
+        },
+        type: 'git.job',
+        description: 'Integra Cloud Technologies',
+        hash: ''
+    }
 ];
