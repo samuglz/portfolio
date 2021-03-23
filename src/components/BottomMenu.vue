@@ -42,7 +42,7 @@
                 <span class="px-2">0</span>
             </div>
         </div>
-        <div class="flex justify-end w-8/12 items-center px-10">
+        <div class="flex justify-end w-8/12 items-center px-5">
             <Translation />
         </div>
     </div>
