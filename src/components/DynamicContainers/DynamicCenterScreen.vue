@@ -12,13 +12,15 @@
 <script>
 import CenterExtensionsSection from '../Sections/CenterExtensionsSection.vue';
 import PackageSection from '../Sections/PackageSection.vue';
+import GitSection from '../Sections/GitSection.vue';
 import { reactive } from 'vue';
 import { event } from '../../Events';
 export default {
     name: 'DynamicCenterScreen',
     components: {
         CenterExtensionsSection,
-        PackageSection
+        PackageSection,
+        GitSection
     },
     setup() {
         const sectionToShow = reactive({ name: 'ExplorerSection' });

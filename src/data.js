@@ -161,6 +161,7 @@ export const packages = {
             <strong class="text-red-500">"serve"</strong>: <strong class="text-green-500">"vite preview</strong>"
         },
         <strong class="text-red-500">"dependencies"</strong>: {
+            <strong class="text-red-500">"dayjs"</strong>: <strong class="text-green-500">"^1.10.4"</strong>,
             <strong class="text-red-500">"mitt"</strong>: <strong class="text-green-500">"^2.1.0"</strong>,
             <strong class="text-red-500">"vue"</strong>: <strong class="text-green-500">"^3.0.5"</strong>,
             <strong class="text-red-500">"vue-i18n"</strong>: <strong class="text-green-500">"^9.0.0</strong>"
@@ -178,3 +179,34 @@ export const packages = {
         }
     }`
 };
+
+export const commitsInfo = [
+    {
+        date: '2009-06',
+        hash: '',
+        description: 'IES Punta Larga - Titulo De Bachillerato'
+    },
+    {
+        date: '2014-06',
+        hash: '',
+        description:
+            'Universidad de La Laguna - 144 créditos del título Grado en Ingeniería Informática.'
+    },
+    {
+        date: '2019-04',
+        hash: '',
+        description: 'Correduría Grupo Gómez'
+    },
+    {
+        date: '2019-10',
+        hash: '',
+        description: 'Vadeaguas'
+    },
+    {
+        date: '2020-05',
+        hash: '',
+        description:
+            'Escuela De Organización Industrial - Programación y Diseño Web Front-End'
+    },
+    { date: 'Currently', description: 'Integra Cloud Technologies', hash: '' }
+];

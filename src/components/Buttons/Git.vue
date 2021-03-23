@@ -2,6 +2,7 @@
     <svg
         @mouseover="changeColor('#FFFFFF')"
         @mouseleave="changeColor('#A6A7AA')"
+        @click="changeSection"
         class="w-8 cursor-pointer py-5"
         viewBox="0 0 10 14"
         fill="none"
@@ -42,7 +43,14 @@
 
 <script setup>
 import { ref } from 'vue';
-
+import { event } from '../../Events';
+const changeSection = () => {
+    event.emit('changeCenterScreen', {
+        newSection: 'GitSection',
+        componentProps: {}
+    });
+    event.emit('changeLeftMenuSection', 'GitSection');
+};
 const color = ref('#A6A7AA');
 const changeColor = value => {
     color.value = value;
