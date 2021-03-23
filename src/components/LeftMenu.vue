@@ -1,5 +1,5 @@
 <template>
-    <div class="w-80 h-full border-r border-solid border-black flex">
+    <div class="h-full border-r border-solid border-black flex">
         <LeftButtonPanel />
         <DynamicLeftMenu />
     </div>

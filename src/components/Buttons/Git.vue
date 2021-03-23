@@ -54,7 +54,7 @@ const changeSection = () => {
         newSection: 'GitSection',
         componentProps: {}
     });
-    event.emit('changeLeftMenuSection', 'GitSection');
+    event.emit('changeLeftMenuSection', '');
 };
 const color = ref('#A6A7AA');
 const changeColor = value => {

@@ -20,7 +20,7 @@
         </div>
         <div
             v-show="isOpen"
-            class="absolute -top-12 w-16 right-9 shadow-sm py-4 bg-background"
+            class="absolute -top-12 w-16 right-4 shadow-sm py-4 bg-background"
         >
             <div
                 class="flex justify-center items-center"

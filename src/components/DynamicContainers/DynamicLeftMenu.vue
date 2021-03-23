@@ -1,5 +1,5 @@
 <template>
-    <div class="w-52 h-full">
+    <div class="w-52 h-full" v-if="section !== ''">
         <keep-alive>
             <component :is="section"></component>
         </keep-alive>
@@ -18,7 +18,7 @@ export default {
         ExtensionsSection
     },
     setup() {
-        const section = ref('ExplorerSection');
+        const section = ref('');
 
         event.on('changeLeftMenuSection', newSection => {
             section.value = newSection;
