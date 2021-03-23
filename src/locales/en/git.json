@@ -3,5 +3,7 @@
     "description": "description",
     "date": "date",
     "author": "author",
-    "commit": "commit"
+    "commit": "commit",
+    "education": "education",
+    "job": "job"
 }

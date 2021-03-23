@@ -3,5 +3,7 @@
     "description": "descripción",
     "date": "fecha",
     "author": "autor",
-    "commit": "commit"
+    "commit": "commit",
+    "education": "formación",
+    "job": "trabajo"
 }
