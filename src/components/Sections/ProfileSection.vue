@@ -15,7 +15,7 @@
             </div>
             <a
                 class="mt-4 hover:underline text-blue-400 text-xl md:text-4xl"
-                href="assets/Curriculum.pdf"
+                href="/Curriculum.pdf"
             >
                 Currículum Vitae
             </a>
