@@ -10,7 +10,7 @@
                 alt="Profile pictures"
             />
             <div class="text-6xl mt-10">Samuel González Alonso</div>
-            <div class="text-xl mt-5">
+            <div class="text-xl mt-5 text-center">
                 {{ t('profile.description') }}
             </div>
             <a
