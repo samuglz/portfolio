@@ -13,6 +13,7 @@
 import CenterExtensionsSection from '../Sections/CenterExtensionsSection.vue';
 import PackageSection from '../Sections/PackageSection.vue';
 import GitSection from '../Sections/GitSection.vue';
+import ProfileSection from '../Sections/ProfileSection.vue';
 import { reactive } from 'vue';
 import { event } from '../../Events';
 export default {
@@ -20,10 +21,11 @@ export default {
     components: {
         CenterExtensionsSection,
         PackageSection,
-        GitSection
+        GitSection,
+        ProfileSection
     },
     setup() {
-        const sectionToShow = reactive({ name: 'ExplorerSection' });
+        const sectionToShow = reactive({ name: 'ProfileSection' });
         event.on('changeCenterScreen', ({ newSection, componentProps }) => {
             sectionToShow.name = newSection;
             sectionToShow.props = { ...componentProps };

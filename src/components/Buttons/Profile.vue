@@ -28,10 +28,10 @@ import { ref } from 'vue';
 import { event } from '../../Events';
 
 const changeSection = () => {
-    // event.emit('changeCenterScreen', {
-    //     newSection: 'GitSection',
-    //     componentProps: {}
-    // });
+    event.emit('changeCenterScreen', {
+        newSection: 'ProfileSection',
+        componentProps: {}
+    });
     event.emit('changeLeftMenuSection', '');
 };
 
