@@ -10,7 +10,7 @@
             <ArrowButton :opened="isOpen" />
             <div>{{ t('explorer.submenu') }}</div>
         </div>
-        <div v-if="isOpen" class="bg-background w-full">
+        <div v-show="isOpen" class="bg-background w-full">
             <template v-for="project in dataProjects" :key="project.id">
                 <ProjectCard
                     :title="project.title"
@@ -23,11 +23,9 @@
 
 <script>
 import { projects } from '../../data.js';
-import { defineAsyncComponent, ref } from 'vue';
-const ProjectCard = defineAsyncComponent(() => import('./ProjectCard.vue'));
-const ArrowButton = defineAsyncComponent(() =>
-    import('../Buttons/ArrowButton.vue')
-);
+import { ref } from 'vue';
+import ProjectCard from './ProjectCard.vue';
+import ArrowButton from '../Buttons/ArrowButton.vue';
 import { useI18n } from 'vue-i18n';
 
 export default {

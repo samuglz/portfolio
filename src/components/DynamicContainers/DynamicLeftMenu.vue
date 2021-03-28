@@ -8,15 +8,11 @@
 </template>
 
 <script>
-import { defineAsyncComponent, ref } from 'vue';
+import { ref } from 'vue';
 import { event } from '../../Events';
 
-const ExplorerSection = defineAsyncComponent(() =>
-    import('../ExplorerSection/ExplorerSection.vue')
-);
-const ExtensionsSection = defineAsyncComponent(() =>
-    import('../ExtensionSection/ExtensionsSection.vue')
-);
+import ExplorerSection from '../ExplorerSection/ExplorerSection.vue';
+import ExtensionsSection from '../ExtensionSection/ExtensionsSection.vue';
 
 export default {
     name: 'DynamicContainer',
