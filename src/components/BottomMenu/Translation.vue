@@ -7,13 +7,13 @@
             <img
                 class="w-4"
                 v-show="locale === 'es'"
-                src="../assets/img/Spain_Icon.svg"
+                src="../../assets/img/Spain_Icon.svg"
                 alt="Spain Flag"
             />
             <img
                 class="w-4"
                 v-show="locale === 'en'"
-                src="../assets/img/US_Icon.svg"
+                src="../../assets/img/US_Icon.svg"
                 alt="US Flag"
             />
             <div class="uppercase mx-1 font-bold">{{ locale }}</div>
@@ -29,7 +29,7 @@
                 <img
                     class="w-4"
                     v-show="locale !== 'es'"
-                    src="../assets/img/Spain_Icon.svg"
+                    src="../../assets/img/Spain_Icon.svg"
                     alt="Spain Flag"
                 />
                 <div v-show="locale === 'en'" class="uppercase mx-1 font-bold">
@@ -43,7 +43,7 @@
                 <img
                     class="w-4"
                     v-show="locale !== 'en'"
-                    src="../assets/img/US_Icon.svg"
+                    src="../../assets/img/US_Icon.svg"
                     alt="US Flag"
                 />
                 <div v-show="locale === 'es'" class="uppercase mx-1 font-bold">
