@@ -1,6 +1,6 @@
 <template>
     <div class="w-full h-full flex flex-col justify-center items-center">
-        <suspense>
+        <suspense :key="id">
             <template #default>
                 <Skill
                     :icon="icon"
