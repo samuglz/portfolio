@@ -1,18 +1,16 @@
 <template>
+    <GraphPoint
+        class="col-span-1"
+        :first="index === 0"
+        :last="index === totalCommits - 1"
+    />
     <div
-        class="point col-span-1"
-        :class="{
-            first: index === 0,
-            last: index === totalCommits - 1
-        }"
+        class="col-span-5 md:col-span-6 text-xs md:text-sm py-1 pl-4 flex items-center"
     >
-        <div class="circle"></div>
-    </div>
-    <div class="col-span-5 md:col-span-6 text-xs md:text-sm py-1 pl-4">
         {{ `(${t(type)}) ${description}` }}
     </div>
     <div
-        class="col-span-3 text-xs md:text-sm py-1 md:col-span-2 pl-4 capitalize"
+        class="col-span-3 text-xs md:text-sm py-1 md:col-span-2 pl-4 capitalize flex items-center"
     >
         {{
             index === 0
@@ -26,17 +24,20 @@
                       .format('MMM YYYY')}`
         }}
     </div>
-    <div class="col-span-3 text-xs md:text-sm py-1 md:col-span-2 pl-4">
+    <div
+        class="col-span-3 text-xs md:text-sm py-1 md:col-span-2 pl-4 flex items-center"
+    >
         Samuel González
     </div>
     <div
-        class="col-span-2 text-xs md:text-sm py-1 pl-4 md:col-span-1 hidden md:block"
+        class="col-span-2 text-xs md:text-sm py-1 pl-4 md:col-span-1 hidden md:flex md:items-center"
     >
         {{ hash }}
     </div>
 </template>
 
 <script>
+import GraphPoint from './GraphPoint.vue';
 import 'dayjs/locale/es';
 import 'dayjs/locale/en';
 import dayjs from 'dayjs';
@@ -51,6 +52,9 @@ export default {
         hash: { type: String, required: true },
         type: { type: String, required: true }
     },
+    components: {
+        GraphPoint
+    },
     setup() {
         const day = dayjs;
         const { locale, t } = useI18n();
@@ -58,33 +62,3 @@ export default {
     }
 };
 </script>
-
-<style scoped>
-.point {
-    display: grid;
-    justify-items: center;
-    grid-template-rows: 1fr min-content 1fr;
-}
-
-.point::before,
-.point::after {
-    content: '';
-    width: 2px;
-    background-color: #5e9eff;
-}
-
-.point.first::before {
-    opacity: 0;
-}
-
-.point.last::after {
-    opacity: 0;
-}
-.circle {
-    border-radius: 50%;
-    background: #5e9eff;
-    padding: 5px;
-    width: 5px;
-    height: 5px;
-}
-</style>
