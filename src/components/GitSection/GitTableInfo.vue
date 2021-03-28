@@ -1,15 +1,12 @@
 <template>
-    <div class="flex col justify-center items-center py-1 relative col-span-1">
-        <div
-            :class="{
-                gitPoint: index !== totalCommits - 1
-            }"
-        ></div>
-        <img
-            class="w-3 z-10"
-            src="../../assets/img/Commit_Icon.svg"
-            alt="Commit Icon"
-        />
+    <div
+        class="point col-span-1"
+        :class="{
+            first: index === 0,
+            last: index === totalCommits - 1
+        }"
+    >
+        <div class="circle"></div>
     </div>
     <div class="col-span-5 md:col-span-6 text-xs md:text-sm py-1 pl-4">
         {{ `(${t(type)}) ${description}` }}
@@ -63,12 +60,31 @@ export default {
 </script>
 
 <style scoped>
-.gitPoint::before {
-    position: absolute;
-    content: ' ';
+.point {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr min-content 1fr;
+}
+
+.point::before,
+.point::after {
+    content: '';
     width: 2px;
-    height: 100%;
     background-color: #5e9eff;
-    left: calc(50% - 1px);
+}
+
+.point.first::before {
+    opacity: 0;
+}
+
+.point.last::after {
+    opacity: 0;
+}
+.circle {
+    border-radius: 50%;
+    background: #5e9eff;
+    padding: 5px;
+    width: 5px;
+    height: 5px;
 }
 </style>
