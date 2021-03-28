@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen h-screen bg-background select-none">
+    <div class="w-screen h-screen bg-dark-background select-none">
         <TopMenu />
         <CenterScreen />
         <BottomMenu />
@@ -10,7 +10,6 @@
 import TopMenu from './components/TopMenu.vue';
 import BottomMenu from './components/BottomMenu.vue';
 import CenterScreen from './components/CenterScreen.vue';
-import { useI18n } from 'vue-i18n';
 export default {
     name: 'App',
     components: {

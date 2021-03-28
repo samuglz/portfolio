@@ -43,6 +43,7 @@ export default {
         }
     },
     setup(props) {
+        const clientWidth = document.documentElement.clientWidth;
         const isOpen = ref(false);
         const openFolder = () => {
             isOpen.value = !isOpen.value;
@@ -54,6 +55,9 @@ export default {
                     projectName: props.projectName
                 }
             });
+            if (clientWidth < 1024) {
+                event.emit('changeLeftMenuSection', '');
+            }
         };
         return { isOpen, openFolder, openMarkdownFile };
     }

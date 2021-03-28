@@ -1,5 +1,7 @@
 <template>
-    <div class="w-full h-14 bg-dark-background px-10 py-2 flex justify-evenly">
+    <div
+        class="w-full h-14 bg-dark-background md:px-10 py-2 flex justify-evenly"
+    >
         <div
             class="h-10 border bg-background border-gray-500 border-solid rounded-xl flex-grow flex items-center pl-5 text-white"
         >

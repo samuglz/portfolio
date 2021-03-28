@@ -1,14 +1,10 @@
 <template>
-    <div class="w-20 flex flex-col justify-between items-center">
-        <div class="flex flex-col items-center">
-            <Documents />
-            <Git />
-            <Extensions />
-            <Github />
-        </div>
-        <div>
-            <Profile />
-        </div>
+    <div class="w-16 md:w-20 flex flex-col items-center bg-background">
+        <Documents />
+        <Git />
+        <Extensions />
+        <Github />
+        <Profile />
     </div>
 </template>
 

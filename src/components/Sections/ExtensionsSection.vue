@@ -3,7 +3,7 @@
         <div
             v-for="skill in dataSkills"
             :key="skill.id"
-            class="w-full h-24 flex flex-col justify-center bg-background hover:bg-coolGray-700 cursor-pointer border-b border-black"
+            class="w-full md:h-24 flex flex-col justify-center bg-background hover:bg-coolGray-700 cursor-pointer border-b border-black"
             @click="selectExtension(skill)"
         >
             <h1 class="w-full text-menu-color font-bold text-lg mx-2">
@@ -33,11 +33,15 @@ import { useI18n } from 'vue-i18n';
 export default {
     name: 'ExtensionsSection',
     setup() {
+        const clientWidth = document.documentElement.clientWidth;
         const selectExtension = skill => {
             event.emit('changeCenterScreen', {
                 newSection: 'CenterExtensionsSection',
                 componentProps: skill
             });
+            if (clientWidth < 1024) {
+                event.emit('changeLeftMenuSection', '');
+            }
         };
         const { t } = useI18n();
 
@@ -52,5 +56,8 @@ export default {
     overflow: hidden; /* make sure it hides the content that overflows */
     white-space: nowrap; /* don't break the line */
     text-overflow: ellipsis;
+}
+.h-total {
+    height: 93.2%;
 }
 </style>

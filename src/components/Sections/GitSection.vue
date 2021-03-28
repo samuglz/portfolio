@@ -1,6 +1,6 @@
 <template>
     <div class="text-menu-color w-full overflow-y-auto">
-        <div id="git" class="grid grid-cols-12 relative">
+        <div id="git" class="grid grid-cols-12">
             <GitTableHeader />
             <template v-for="(commit, index) in commits" :key="index">
                 <GitTableInfo

@@ -1,5 +1,7 @@
 <template>
-    <div class="w-full h-full bg-dark-background">
+    <div
+        class="w-5/6 md:w-full md:h-full h-full bg-dark-background overflow-x-hidden"
+    >
         <DynamicCenterScreen />
     </div>
 </template>

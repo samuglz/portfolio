@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center items-center py-1 relative">
+    <div class="flex col justify-center items-center py-1 relative col-span-1">
         <div
             :class="{
                 gitPoint: index !== totalCommits - 1
@@ -11,10 +11,12 @@
             alt="Commit Icon"
         />
     </div>
-    <div class="col-span-6 text-sm py-1 pl-4">
+    <div class="col-span-5 md:col-span-6 text-xs md:text-sm py-1 pl-4">
         {{ `(${t(type)}) ${description}` }}
     </div>
-    <div class="text-sm py-1 col-span-2 pl-4 capitalize">
+    <div
+        class="col-span-3 text-xs md:text-sm py-1 md:col-span-2 pl-4 capitalize"
+    >
         {{
             index === 0
                 ? `${day(`${date.from}`).locale(locale).format('MMM YYYY')} - ${
@@ -27,8 +29,12 @@
                       .format('MMM YYYY')}`
         }}
     </div>
-    <div class="text-sm py-1 col-span-2 pl-4">Samuel González</div>
-    <div class="text-sm py-1 pl-4">
+    <div class="col-span-3 text-xs md:text-sm py-1 md:col-span-2 pl-4">
+        Samuel González
+    </div>
+    <div
+        class="col-span-2 text-xs md:text-sm py-1 pl-4 md:col-span-1 hidden md:block"
+    >
         {{ hash }}
     </div>
 </template>

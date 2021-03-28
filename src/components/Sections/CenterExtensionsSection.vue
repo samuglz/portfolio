@@ -1,19 +1,16 @@
 <template>
     <div class="w-full h-full flex flex-col justify-center items-center">
         <component :is="icon"></component>
-        <!-- <h1 class="text-menu-color text-6xl text-center pt-5">
-            {{ extension }}
-        </h1> -->
         <div class="py-10 w-3/4 flex flex-col justify-center items-center">
-            <div class="text-xl text-menu-color">
+            <div class="text-base md:text-xl text-center text-menu-color">
                 {{ t(description) }}
             </div>
             <div class="mt-20 flex justify-center items-center">
                 <div class="px-2" v-for="n in rate" :key="n">
-                    <Rating class="w-14 h-14" />
+                    <Rating class="md:w-14 md:h-14 w-8 h-8" />
                 </div>
                 <div class="px-2" v-for="n in 5 - rate" :key="n">
-                    <StrokeRating class="w-14 h-14" />
+                    <StrokeRating class="md:w-14 md:h-14 w-8 h-8" />
                 </div>
             </div>
         </div>

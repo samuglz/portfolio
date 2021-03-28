@@ -1,6 +1,6 @@
 <template>
     <div
-        class="w-full bg-dark-background flex justify-between items-center absolute bottom-0 border-t border-solid border-black text-menu-color text-sm"
+        class="w-full bg-dark-background flex justify-between items-center fixed bottom-0 border-t border-solid border-black text-menu-color text-sm z-30"
     >
         <div class="flex justify-start w-60 items-center">
             <div class="bg-blue-500 px-3">
@@ -18,28 +18,28 @@
                 />
                 <span class="px-1">main</span>
             </div>
-            <div class="flex mx-3 pr-2">
+            <div class="flex mx-3">
                 <img
                     class="w-4 h-5"
                     src="../assets/img/Sync_Icon.svg"
                     alt="Sync Icon"
                 />
             </div>
-            <div class="flex items-center">
+            <div class="flex justify-evenly items-center w-16">
                 <img
                     class="w-4 h-5"
                     src="../assets/img/Times_Icon.svg"
                     alt="Times Icon"
                 />
-                <span class="px-2">0</span>
+                <span>0</span>
             </div>
-            <div class="flex items-center">
+            <div class="flex items-center justify-evenly w-16">
                 <img
                     class="w-4 h-5"
                     src="../assets/img/Danger_Icon.svg"
                     alt="Danger Icon"
                 />
-                <span class="px-2">0</span>
+                <span>0</span>
             </div>
         </div>
         <div class="flex justify-end w-8/12 items-center px-5">

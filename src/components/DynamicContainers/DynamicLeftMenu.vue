@@ -1,5 +1,8 @@
 <template>
-    <div class="w-52 h-full" v-if="section !== ''">
+    <div
+        class="w-52 h-full md:relative absolute md:z-0 z-20 left-14 md:left-0 bg-background"
+        v-if="section !== ''"
+    >
         <keep-alive>
             <component :is="section"></component>
         </keep-alive>

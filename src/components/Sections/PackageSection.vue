@@ -1,6 +1,6 @@
 <template>
     <div
-        class="text-menu-color font-bold flex justify-start w-full h-full py-2"
+        class="text-menu-color font-bold flex justify-start w-full h-full py-2 md:px-10"
     >
         <pre v-html="info"></pre>
     </div>

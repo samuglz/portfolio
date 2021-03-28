@@ -3,7 +3,7 @@
         @mouseover="changeColor('#FFFFFF')"
         @mouseleave="changeColor('#A6A7AA')"
         @click="changeSection"
-        class="w-8 cursor-pointer py-5"
+        class="w-6 md:w-8 cursor-pointer py-5"
         viewBox="0 0 32 45"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
