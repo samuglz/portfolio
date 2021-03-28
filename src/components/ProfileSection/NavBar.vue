@@ -17,8 +17,7 @@
 
 <script>
 export default {
-    name: 'NavBar',
-    setup() {}
+    name: 'NavBar'
 };
 </script>
 

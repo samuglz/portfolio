@@ -3,17 +3,21 @@
         class="w-52 h-full md:relative absolute md:z-0 z-20 left-14 md:left-0 bg-background"
         v-if="section !== ''"
     >
-        <keep-alive>
-            <component :is="section"></component>
-        </keep-alive>
+        <component :is="section"></component>
     </div>
 </template>
 
 <script>
-import ExplorerSection from '../ExplorerSection/ExplorerSection.vue';
-import ExtensionsSection from '../ExtensionSection/ExtensionsSection.vue';
-import { ref } from 'vue';
+import { defineAsyncComponent, ref } from 'vue';
 import { event } from '../../Events';
+
+const ExplorerSection = defineAsyncComponent(() =>
+    import('../ExplorerSection/ExplorerSection.vue')
+);
+const ExtensionsSection = defineAsyncComponent(() =>
+    import('../ExtensionSection/ExtensionsSection.vue')
+);
+
 export default {
     name: 'DynamicContainer',
     components: {

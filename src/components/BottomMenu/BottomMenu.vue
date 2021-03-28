@@ -49,7 +49,8 @@
 </template>
 
 <script>
-import Translation from './Translation.vue';
+import { defineAsyncComponent } from 'vue';
+const Translation = defineAsyncComponent(() => import('./Translation.vue'));
 export default {
     name: 'BottomMenu',
     components: {

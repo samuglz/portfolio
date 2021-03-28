@@ -5,9 +5,17 @@
     </div>
 </template>
 
-<script setup>
-import LeftMenu from '../LeftMenu/LeftMenu.vue';
-import CodeSection from './CodeSection.vue';
+<script>
+import { defineAsyncComponent } from 'vue';
+const LeftMenu = defineAsyncComponent(() => import('../LeftMenu/LeftMenu.vue'));
+const CodeSection = defineAsyncComponent(() => import('./CodeSection.vue'));
+export default {
+    name: 'CenterScreen',
+    components: {
+        LeftMenu,
+        CodeSection
+    }
+};
 </script>
 
 <style scoped>

@@ -18,15 +18,18 @@
 </template>
 
 <script>
-import HTML from '../Icons/HtmlIcon.vue';
-import CSS from '../Icons/CSS.vue';
-import JS from '../Icons/Javascript.vue';
-import Vue from '../Icons/Vue.vue';
-import React from '../Icons/React.vue';
-import Figma from '../Icons/Figma.vue';
-import Git from '../Icons/Git.vue';
-import Rating from '../Icons/Rating.vue';
-import StrokeRating from '../Icons/StrokeRating.vue';
+import { defineAsyncComponent } from 'vue';
+const HTML = defineAsyncComponent(() => import('../Icons/HtmlIcon.vue'));
+const CSS = defineAsyncComponent(() => import('../Icons/CSS.vue'));
+const JS = defineAsyncComponent(() => import('../Icons/Javascript.vue'));
+const Vue = defineAsyncComponent(() => import('../Icons/Vue.vue'));
+const React = defineAsyncComponent(() => import('../Icons/React.vue'));
+const Figma = defineAsyncComponent(() => import('../Icons/Figma.vue'));
+const Git = defineAsyncComponent(() => import('../Icons/Git.vue'));
+const Rating = defineAsyncComponent(() => import('../Icons/Rating.vue'));
+const StrokeRating = defineAsyncComponent(() =>
+    import('../Icons/StrokeRating.vue')
+);
 import { useI18n } from 'vue-i18n';
 export default {
     name: 'CenterExtensionsSection',

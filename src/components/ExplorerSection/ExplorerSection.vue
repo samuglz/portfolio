@@ -22,11 +22,14 @@
 </template>
 
 <script>
-import ArrowButton from '../Buttons/ArrowButton.vue';
 import { projects } from '../../data.js';
-import ProjectCard from './ProjectCard.vue';
+import { defineAsyncComponent, ref } from 'vue';
+const ProjectCard = defineAsyncComponent(() => import('./ProjectCard.vue'));
+const ArrowButton = defineAsyncComponent(() =>
+    import('../Buttons/ArrowButton.vue')
+);
 import { useI18n } from 'vue-i18n';
-import { ref } from 'vue';
+
 export default {
     name: 'ExplorerSection',
     components: {

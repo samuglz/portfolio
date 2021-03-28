@@ -31,15 +31,22 @@
     </svg>
 </template>
 
-<script setup>
+<script>
 import { ref } from 'vue';
 import { event } from '../../Events';
-const changeSection = () => {
-    event.emit('changeLeftMenuSection', 'ExtensionsSection');
-};
-const color = ref('#A6A7AA');
-const changeColor = value => {
-    color.value = value;
+export default {
+    name: 'Extensions',
+    setup() {
+        const changeSection = () => {
+            event.emit('changeLeftMenuSection', 'ExtensionsSection');
+        };
+        const color = ref('#A6A7AA');
+        const changeColor = value => {
+            color.value = value;
+        };
+
+        return { changeColor, changeSection, color };
+    }
 };
 </script>
 

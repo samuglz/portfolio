@@ -17,10 +17,12 @@
 </template>
 
 <script>
-import { reactive } from 'vue';
+import { defineAsyncComponent, reactive } from 'vue';
 import { commitsInfo } from '../../data.js';
-import GitTableHeader from './GitTableHeader.vue';
-import GitTableInfo from './GitTableInfo.vue';
+const GitTableHeader = defineAsyncComponent(() =>
+    import('./GitTableHeader.vue')
+);
+const GitTableInfo = defineAsyncComponent(() => import('./GitTableInfo.vue'));
 export default {
     name: 'GitSection',
     components: {
