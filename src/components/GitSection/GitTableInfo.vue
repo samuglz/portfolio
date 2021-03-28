@@ -7,7 +7,7 @@
         ></div>
         <img
             class="w-3 z-10"
-            src="../assets/img/Commit_Icon.svg"
+            src="../../assets/img/Commit_Icon.svg"
             alt="Commit Icon"
         />
     </div>

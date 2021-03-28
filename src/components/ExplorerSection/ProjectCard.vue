@@ -6,13 +6,13 @@
         <img
             v-show="!isOpen"
             class="w-4"
-            src="../assets/img/Close_Folder.svg"
+            src="../../assets/img/Close_Folder.svg"
             alt="Close Folder Icon"
         />
         <img
             v-show="isOpen"
             class="w-4"
-            src="../assets/img/Open_Folder.svg"
+            src="../../assets/img/Open_Folder.svg"
             alt="Open Folder Icon"
         />
         <div class="px-2">{{ title }}</div>
@@ -22,7 +22,11 @@
         class="flex py-2 w-full px-8 bg-background hover:bg-coolGray-700 cursor-pointer items-center"
         @click="openMarkdownFile"
     >
-        <img class="w-4" src="../assets/img/Npm_Icon.svg" alt="Markdown Icon" />
+        <img
+            class="w-4"
+            src="../../assets/img/Npm_Icon.svg"
+            alt="Markdown Icon"
+        />
         <div class="text-sm px-2">package.json</div>
     </div>
 </template>
