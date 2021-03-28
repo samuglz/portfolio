@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import Navbar from '../ProfileSection/NavBar.vue';
+import Navbar from './NavBar.vue';
 import Twitter from '../Buttons/Twitter.vue';
 import Linkedin from '../Buttons/Linkedin.vue';
 import { useI18n } from 'vue-i18n';

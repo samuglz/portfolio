@@ -29,7 +29,7 @@
 
 <script>
 import { ref } from 'vue';
-import { event } from '../Events';
+import { event } from '../../Events';
 export default {
     name: 'ProjectCard',
     props: {

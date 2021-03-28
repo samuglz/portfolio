@@ -6,10 +6,6 @@
     </div>
 </template>
 
-<script setup>
-import CloseButton from './Buttons/CloseButton.vue';
-import MinimizeButton from './Buttons/MinimizeButton.vue';
-import MaximizeButton from './Buttons/MaximizeButton.vue';
-</script>
+<script setup></script>
 
 <style scoped></style>

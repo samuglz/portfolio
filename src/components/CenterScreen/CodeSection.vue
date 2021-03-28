@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import DynamicCenterScreen from './DynamicContainers/DynamicCenterScreen.vue';
+import DynamicCenterScreen from '../DynamicContainers/DynamicCenterScreen.vue';
 export default {
     name: 'Code Section',
     components: {

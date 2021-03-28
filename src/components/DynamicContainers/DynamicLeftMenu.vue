@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import ExplorerSection from '../Sections/ExplorerSection.vue';
-import ExtensionsSection from '../Sections/ExtensionsSection.vue';
+import ExplorerSection from '../ExplorerSection/ExplorerSection.vue';
+import ExtensionsSection from '../ExtensionSection/ExtensionsSection.vue';
 import { ref } from 'vue';
 import { event } from '../../Events';
 export default {

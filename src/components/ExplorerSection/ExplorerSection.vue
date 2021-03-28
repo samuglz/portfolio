@@ -24,7 +24,7 @@
 <script>
 import ArrowButton from '../Buttons/ArrowButton.vue';
 import { projects } from '../../data.js';
-import ProjectCard from '../ProjectCard.vue';
+import ProjectCard from './ProjectCard.vue';
 import { useI18n } from 'vue-i18n';
 import { ref } from 'vue';
 export default {

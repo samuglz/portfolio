@@ -6,8 +6,8 @@
 </template>
 
 <script setup>
-import LeftButtonPanel from './LeftButtonPanel.vue';
-import DynamicLeftMenu from './DynamicContainers/DynamicLeftMenu.vue';
+import LeftButtonPanel from '../LeftMenu/LeftButtonPanel.vue';
+import DynamicLeftMenu from '../DynamicContainers/DynamicLeftMenu.vue';
 </script>
 
 <style scoped></style>

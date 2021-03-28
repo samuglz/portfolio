@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import CenterExtensionsSection from '../Sections/CenterExtensionsSection.vue';
-import PackageSection from '../Sections/PackageSection.vue';
-import GitSection from '../Sections/GitSection.vue';
-import ProfileSection from '../Sections/ProfileSection.vue';
+import CenterExtensionsSection from '../ExtensionSection/CenterExtensionsSection.vue';
+import PackageSection from '../ExplorerSection/PackageSection.vue';
+import GitSection from '../GitSection/GitSection.vue';
+import ProfileSection from '../ProfileSection/ProfileSection.vue';
 import { reactive } from 'vue';
 import { event } from '../../Events';
 export default {

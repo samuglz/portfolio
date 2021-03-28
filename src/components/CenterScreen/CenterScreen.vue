@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import LeftMenu from './LeftMenu.vue';
+import LeftMenu from '../LeftMenu/LeftMenu.vue';
 import CodeSection from './CodeSection.vue';
 </script>
 

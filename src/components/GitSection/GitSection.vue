@@ -19,8 +19,8 @@
 <script>
 import { reactive } from 'vue';
 import { commitsInfo } from '../../data.js';
-import GitTableHeader from '../GitTableHeader.vue';
-import GitTableInfo from '../GitTableInfo.vue';
+import GitTableHeader from './GitTableHeader.vue';
+import GitTableInfo from './GitTableInfo.vue';
 export default {
     name: 'GitSection',
     components: {

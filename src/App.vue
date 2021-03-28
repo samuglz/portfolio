@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import TopMenu from './components/TopMenu.vue';
-import BottomMenu from './components/BottomMenu.vue';
-import CenterScreen from './components/CenterScreen.vue';
+import TopMenu from './components/TopMenu/TopMenu.vue';
+import BottomMenu from './components/BottomMenu/BottomMenu.vue';
+import CenterScreen from './components/CenterScreen/CenterScreen.vue';
 export default {
     name: 'App',
     components: {
