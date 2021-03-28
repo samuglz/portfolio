@@ -149,10 +149,10 @@ export const packages = {
 }`,
     portfolio: `{
         <strong class="md:text-base text-xs text-red-400">"name"</strong>: <strong class="md:text-base text-xs text-green-400">"portfolio"</strong>,
-        <strong class="md:text-base text-xs text-red-400">"homepage"</strong>: <strong class="md:text-base text-xs text-green-400">"<a href="http://localhost:3000" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline cursor-pointer">http://localhost:3000</a>"</strong>,
+        <strong class="md:text-base text-xs text-red-400">"homepage"</strong>: <strong class="md:text-base text-xs text-green-400">"<a href="https://www.samuglz.dev" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline cursor-pointer">www.samuglz.dev</a>"</strong>,
         <strong class="md:text-base text-xs text-red-400">"repository"</strong>: {
             <strong class="md:text-base text-xs text-red-400">"type"</strong>: <strong class="md:text-base text-xs text-green-400">"git"</strong>,
-            <strong class="md:text-base text-xs text-red-400">"url"</strong>: <strong class="md:text-base text-xs text-green-400">"<a href="https://github.com/samuglz/Portfolio-2.0" rel="noopener noreferrer" target="_blank" class="text-blue-400 hover:underline cursor-pointer">https://github.com/samuglz/Portfolio-2.0</a>"</strong>,
+            <strong class="md:text-base text-xs text-red-400">"url"</strong>: <strong class="md:text-base text-xs text-green-400">"<a href="https://github.com/samuglz/portfolio" rel="noopener noreferrer" target="_blank" class="text-blue-400 hover:underline cursor-pointer">https://github.com/samuglz/portfolio</a>"</strong>,
         },
         <strong class="md:text-base text-xs text-red-400">"version"</strong>: <strong class="md:text-base text-xs text-green-400">"0.0.0"</strong>,
         <strong class="md:text-base text-xs text-red-400">"scripts"</strong>: {
