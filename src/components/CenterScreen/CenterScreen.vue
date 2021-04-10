@@ -1,5 +1,5 @@
 <template>
-    <div class="h-total w-full flex">
+    <div class="h-center-screen w-full flex">
         <LeftMenu />
         <CodeSection />
     </div>
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-.h-total {
+.h-center-screen {
     height: calc(100vh - 3.5rem);
 }
 </style>
