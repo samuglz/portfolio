@@ -1,16 +1,16 @@
 <template>
     <GraphPoint
-        class="col-span-1"
+        class="col-span-2 lg:col-span-1"
         :first="index === 0"
         :last="index === totalCommits - 1"
     />
     <div
-        class="col-span-5 md:col-span-6 text-xs md:text-sm py-1 pl-4 flex items-center"
+        class="col-span-4 lg:col-span-6 text-xs lg:text-sm py-1 pl-1 lg:pl-4 flex items-center"
     >
         {{ `(${t(type)}) ${description}` }}
     </div>
     <div
-        class="col-span-3 text-xs md:text-sm py-1 md:col-span-2 pl-4 capitalize flex items-center"
+        class="col-span-3 text-xs lg:text-sm py-1 lg:col-span-2 pl-4 capitalize flex items-center"
     >
         {{
             index === 0
@@ -25,12 +25,12 @@
         }}
     </div>
     <div
-        class="col-span-3 text-xs md:text-sm py-1 md:col-span-2 pl-4 flex items-center"
+        class="col-span-3 text-xs lg:text-sm py-1 lg:col-span-2 pl-4 flex items-center"
     >
         Samuel González
     </div>
     <div
-        class="col-span-2 text-xs md:text-sm py-1 pl-4 md:col-span-1 hidden md:flex md:items-center"
+        class="col-span-2 text-xs lg:text-sm py-1 pl-4 lg:col-span-1 hidden lg:flex lg:items-center"
     >
         {{ hash }}
     </div>
