@@ -34,6 +34,6 @@ export default {
 
 <style scoped>
 .h-center-screen {
-    height: calc(100% - 3.5rem);
+    height: calc(100vh - 3.5rem);
 }
 </style>
