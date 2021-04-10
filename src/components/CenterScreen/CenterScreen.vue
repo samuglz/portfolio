@@ -18,8 +18,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .h-total {
-    height: 93.2%;
+    height: calc(100vh - 3.5rem);
 }
 </style>
