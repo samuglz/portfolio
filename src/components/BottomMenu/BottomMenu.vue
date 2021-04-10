@@ -1,6 +1,6 @@
 <template>
     <div
-        class="w-full bg-dark-background flex justify-between items-center fixed bottom-0 border-t border-solid border-black text-menu-color text-sm z-30"
+        class="w-full bg-dark-background flex justify-between items-center fixed bottom-0 border-t border-solid border-black text-menu-color text-sm z-30 h-6"
     >
         <div class="flex justify-start w-60 items-center">
             <div class="bg-blue-500 px-3">
