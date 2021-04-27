@@ -58,6 +58,16 @@ export const projects = [
         id: 3,
         title: 'Portfolio',
         readme: 'portfolio'
+    },
+    {
+        id: 4,
+        title: 'InstaUpload (Back)',
+        readme: 'instauploadBackend'
+    },
+    {
+        id: 5,
+        title: 'InstaUpload (Front)',
+        readme: 'instauploadFrontend'
     }
 ];
 
@@ -176,6 +186,67 @@ export const packages = {
             <strong class="md:text-base text-xs text-red-400">"prettier"</strong>: <strong class="md:text-base text-xs text-green-400">"^2.2.1"</strong>,
             <strong class="md:text-base text-xs text-red-400">"tailwindcss"</strong>: <strong class="md:text-base text-xs text-green-400">"npm:@tailwindcss/postcss7-compat@^2.0.3"</strong>,
             <strong class="md:text-base text-xs text-red-400">"vite"</strong>: <strong class="md:text-base text-xs text-green-400">"^2.1.2"</strong>
+        }
+}`,
+    instauploadBackend: `{
+        <strong class="md:text-base text-xs text-red-400">"name"</strong>: <strong class="md:text-base text-xs text-green-400">"backend",</strong>
+        <strong class="md:text-base text-xs text-red-400">"repository"</strong>: <strong class="md:text-base text-xs text-green-400">:{</strong>
+            <strong class="md:text-base text-xs text-red-400">"type"</strong>: <strong class="md:text-base text-xs text-green-400">"git",</strong>
+            <strong class="md:text-base text-xs text-red-400">"url"</strong>: <strong class="md:text-base text-xs text-green-400">"<a href="https://github.com/samuglz/InstaUploader" rel="noopener noreferrer" target="_blank" class="text-blue-400 hover:underline cursor-pointer">https://github.com/samuglz/InstaUploader</a>"</strong>
+        },
+        <strong class="md:text-base text-xs text-red-400">"version"</strong>: <strong class="md:text-base text-xs text-green-400">"1.0.0",</strong>
+        <strong class="md:text-base text-xs text-red-400">"main"</strong>: <strong class="md:text-base text-xs text-green-400">"index.js",</strong>
+        <strong class="md:text-base text-xs text-red-400">"scripts"</strong>: {
+            <strong class="md:text-base text-xs text-red-400">"start"</strong>: <strong class="md:text-base text-xs text-green-400">"node index.js",</strong>
+            <strong class="md:text-base text-xs text-red-400">"dev"</strong>: <strong class="md:text-base text-xs text-green-400">"nodemon index.js"</strong>
+        },
+        <strong class="md:text-base text-xs text-red-400">"author"</strong>: <strong class="md:text-base text-xs text-green-400">"Samuel Gonzalez",</strong>
+        <strong class="md:text-base text-xs text-red-400">"license"</strong>: <strong class="md:text-base text-xs text-green-400">"MIT",</strong>
+        <strong class="md:text-base text-xs text-red-400">"devDependencies"</strong>: {
+            <strong class="md:text-base text-xs text-red-400">"nodemon"</strong>: <strong class="md:text-base text-xs text-green-400">"2.0.7",</strong>
+            <strong class="md:text-base text-xs text-red-400">"prettier"</strong>: <strong class="md:text-base text-xs text-green-400">"^2.2.1"</strong>
+        },
+        <strong class="md:text-base text-xs text-red-400">"dependencies"</strong>: {
+            <strong class="md:text-base text-xs text-red-400">"cors"</strong>: <strong class="md:text-base text-xs text-green-400">"2.8.5",</strong>
+            <strong class="md:text-base text-xs text-red-400">"dotenv"</strong>: <strong class="md:text-base text-xs text-green-400">"8.2.0",</strong>
+            <strong class="md:text-base text-xs text-red-400">"express"</strong>: <strong class="md:text-base text-xs text-green-400">"4.17.1",</strong>
+            <strong class="md:text-base text-xs text-red-400">"express-fileupload"</strong>: <strong class="md:text-base text-xs text-green-400">"1.2.1",</strong>
+            <strong class="md:text-base text-xs text-red-400">"morgan"</strong>: <strong class="md:text-base text-xs text-green-400">"1.10.0",</strong>
+            <strong class="md:text-base text-xs text-red-400">"uuid"</strong>: <strong class="md:text-base text-xs text-green-400">"8.3.2"</strong>
+        }
+}`,
+    instauploadFrontend: `{
+        <strong class="md:text-base text-xs text-red-400">"name"</strong>: <strong class="md:text-base text-xs text-green-400">"frontend",</strong>
+        <strong class="md:text-base text-xs text-red-400">"repository"</strong>: <strong class="md:text-base text-xs text-green-400">:{</strong>
+            <strong class="md:text-base text-xs text-red-400">"type"</strong>: <strong class="md:text-base text-xs text-green-400">"git",</strong>
+            <strong class="md:text-base text-xs text-red-400">"url"</strong>: <strong class="md:text-base text-xs text-green-400">"<a href="https://github.com/samuglz/InstaUploader" rel="noopener noreferrer" target="_blank" class="text-blue-400 hover:underline cursor-pointer">https://github.com/samuglz/InstaUploader</a>"</strong>
+        },
+        <strong class="md:text-base text-xs text-red-400">"version"</strong>: <strong class="md:text-base text-xs text-green-400">"1.0.0",</strong>
+        <strong class="md:text-base text-xs text-red-400">"scripts"</strong>: {
+          <strong class="md:text-base text-xs text-red-400">"serve"</strong>: <strong class="md:text-base text-xs text-green-400">"vue-cli-service serve",</strong>
+          <strong class="md:text-base text-xs text-red-400">"build"</strong>: <strong class="md:text-base text-xs text-green-400">"vue-cli-service build",</strong>
+          <strong class="md:text-base text-xs text-red-400">"lint"</strong>: <strong class="md:text-base text-xs text-green-400">"vue-cli-service lint"</strong>
+        },
+        <strong class="md:text-base text-xs text-red-400">"dependencies"</strong>: {
+          <strong class="md:text-base text-xs text-red-400">"autoprefixer"</strong>: <strong class="md:text-base text-xs text-green-400">"^9.8.6",</strong>
+          <strong class="md:text-base text-xs text-red-400">"axios"</strong>: <strong class="md:text-base text-xs text-green-400">"^0.21.1",</strong>
+          <strong class="md:text-base text-xs text-red-400">"core-js"</strong>: <strong class="md:text-base text-xs text-green-400">"^3.6.5",</strong>
+          <strong class="md:text-base text-xs text-red-400">"tailwindcss"</strong>: <strong class="md:text-base text-xs text-green-400">"npm:@tailwindcss/postcss7-compat@^2.1.0",</strong>
+          <strong class="md:text-base text-xs text-red-400">"vue"</strong>: <strong class="md:text-base text-xs text-green-400">"^2.6.11",</strong>
+          <strong class="md:text-base text-xs text-red-400">"vue-router"</strong>: <strong class="md:text-base text-xs text-green-400">"^3.2.0"</strong>
+        },
+        <strong class="md:text-base text-xs text-red-400">"devDependencies"</strong>: {
+          <strong class="md:text-base text-xs text-red-400">"@vue/cli-plugin-babel"</strong>: <strong class="md:text-base text-xs text-green-400">"~4.5.0",</strong>
+          <strong class="md:text-base text-xs text-red-400">"@vue/cli-plugin-eslint"</strong>: <strong class="md:text-base text-xs text-green-400">"~4.5.0",</strong>
+          <strong class="md:text-base text-xs text-red-400">"@vue/cli-plugin-router"</strong>: <strong class="md:text-base text-xs text-green-400">"^4.5.12",</strong>
+          <strong class="md:text-base text-xs text-red-400">"@vue/cli-service"</strong>: <strong class="md:text-base text-xs text-green-400">"~4.5.0",</strong>
+          <strong class="md:text-base text-xs text-red-400">"@vue/eslint-config-prettier"</strong>: <strong class="md:text-base text-xs text-green-400">"^6.0.0",</strong>
+          <strong class="md:text-base text-xs text-red-400">"babel-eslint"</strong>: <strong class="md:text-base text-xs text-green-400">"^10.1.0",</strong>
+          <strong class="md:text-base text-xs text-red-400">"eslint"</strong>: <strong class="md:text-base text-xs text-green-400">"^6.7.2",</strong>
+          <strong class="md:text-base text-xs text-red-400">"eslint-plugin-prettier"</strong>: <strong class="md:text-base text-xs text-green-400">"^3.3.1",</strong>
+          <strong class="md:text-base text-xs text-red-400">"eslint-plugin-vue"</strong>: <strong class="md:text-base text-xs text-green-400">"^6.2.2",</strong>
+          <strong class="md:text-base text-xs text-red-400">"prettier"</strong>: <strong class="md:text-base text-xs text-green-400">"^2.2.1",</strong>
+          <strong class="md:text-base text-xs text-red-400">"vue-template-compiler"</strong>: <strong class="md:text-base text-xs text-green-400">"^2.6.11"</strong>
         }
 }`
 };
