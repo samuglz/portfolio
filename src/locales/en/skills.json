@@ -5,5 +5,6 @@
     "html": "HTML 5 is the fifth major revision of the basic language of the World Wide Web",
     "js": "JavaScript is an interpreted programming language, dialect of the ECMAScript standard. It is defined as object-oriented, prototype-based, imperative, loosely typed, and dynamic.",
     "react": "React is an open source Javascript library designed to create user interfaces with the aim of facilitating application development on a single page. It is maintained by Facebook and the free software community. There are more than a thousand free developers in the project.",
-    "vue": "Vue.js is an open source JavaScript framework for building user interfaces and single page applications."
+    "vue": "Vue.js is an open source JavaScript framework for building user interfaces and single page applications.",
+    "graphql": "GraphQL is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data."
 }

@@ -27,6 +27,7 @@ const React = defineAsyncComponent(() => import('../Icons/React.vue'));
 const Figma = defineAsyncComponent(() => import('../Icons/Figma.vue'));
 const Git = defineAsyncComponent(() => import('../Icons/Git.vue'));
 const Rating = defineAsyncComponent(() => import('../Icons/Rating.vue'));
+const Graphql = defineAsyncComponent(() => import('../Icons/Graphql.vue'));
 const StrokeRating = defineAsyncComponent(() =>
     import('../Icons/StrokeRating.vue')
 );
@@ -42,7 +43,8 @@ export default {
         Vue,
         Figma,
         Rating,
-        StrokeRating
+        StrokeRating,
+        Graphql
     },
     props: {
         icon: {

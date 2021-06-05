@@ -40,6 +40,12 @@ export const skills = [
         id: 7,
         description: 'skills.git',
         rate: 3
+    },
+    {
+        icon: 'Graphql',
+        id: 8,
+        description: 'skills.graphql',
+        rate: 2
     }
 ];
 
