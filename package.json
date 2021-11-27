@@ -18,8 +18,8 @@
         "@vitejs/plugin-vue": "^1.10.1",
         "@vue/compiler-sfc": "^3.2.23",
         "autoprefixer": "^9.8.6",
-        "postcss": "^7.0.35",
-        "prettier": "^2.5.0",
+        "postcss": "^8.2.10",
+        "prettier": "^2.3.1",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
         "vite": "^2.6.14"
     }
