@@ -5,20 +5,16 @@
     </div>
 </template>
 
-<script>
-import { defineAsyncComponent } from 'vue';
+<script setup>
+import { defineAsyncComponent, defineComponent } from 'vue';
 import LeftButtonPanel from '../LeftMenu/LeftButtonPanel.vue';
 
 const DynamicLeftMenu = defineAsyncComponent(() =>
     import('../DynamicContainers/DynamicLeftMenu.vue')
 );
-export default {
-    name: 'LeftMenu',
-    components: {
-        LeftButtonPanel,
-        DynamicLeftMenu
-    }
-};
+defineComponent({
+    name: 'LeftMenu'
+})
 </script>
 
 <style scoped></style>

@@ -27,22 +27,17 @@
     </svg>
 </template>
 
-<script>
-import { ref } from 'vue';
+<script setup>
+import { defineComponent, ref } from 'vue';
 import { event } from '../../Events';
-export default {
+defineComponent({
     name: 'DocumentButton',
-    setup() {
-        const changeSection = () => {
-            event.emit('changeLeftMenuSection', 'ExplorerSection');
-        };
-        const color = ref('#A6A7AA');
-        const changeColor = value => {
-            color.value = value;
-        };
-        return { changeColor, changeSection, color };
-    }
+})
+const changeSection = () => {
+    event.emit('changeLeftMenuSection', 'ExplorerSection');
+};
+const color = ref('#A6A7AA');
+const changeColor = value => {
+    color.value = value;
 };
 </script>
-
-<style></style>

@@ -20,17 +20,14 @@
     </a>
 </template>
 
-<script>
-import { ref } from 'vue';
-export default {
+<script setup>
+import { defineComponent, ref } from 'vue';
+defineComponent({
     name: 'Github',
-    setup() {
-        const color = ref('#A6A7AA');
-        const changeColor = value => {
-            color.value = value;
-        };
-        return { color, changeColor };
-    }
+})
+const color = ref('#A6A7AA');
+const changeColor = value => {
+    color.value = value;
 };
 </script>
 

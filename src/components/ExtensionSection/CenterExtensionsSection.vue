@@ -16,30 +16,25 @@
     </div>
 </template>
 
-<script>
+<script setup>
+import { defineComponent } from 'vue';
 import Loader from '../Loader.vue';
 import Skill from './Skill.vue';
-export default {
+defineComponent({
     name: 'CenterExtensionsSection',
-    components: {
-        Loader,
-        Skill
+})
+defineProps({
+    icon: {
+        type: String
     },
-    props: {
-        icon: {
-            type: String
-        },
-        id: {
-            type: Number
-        },
-        description: {
-            type: String
-        },
-        rate: {
-            type: Number
-        }
+    id: {
+        type: Number
+    },
+    description: {
+        type: String
+    },
+    rate: {
+        type: Number
     }
-};
+})
 </script>
-
-<style></style>

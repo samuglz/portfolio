@@ -21,27 +21,19 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import { projects } from '../../data.js';
-import { ref } from 'vue';
+import { ref, defineComponent } from 'vue';
 import ProjectCard from './ProjectCard.vue';
 import ArrowButton from '../Buttons/ArrowButton.vue';
 import { useI18n } from 'vue-i18n';
-
-export default {
+defineComponent({
     name: 'ExplorerSection',
-    components: {
-        ArrowButton,
-        ProjectCard
-    },
-    setup() {
-        const { t } = useI18n();
-        const isOpen = ref(true);
-        const handleExplorerMenu = () => {
-            isOpen.value = !isOpen.value;
-        };
-        const dataProjects = projects;
-        return { t, handleExplorerMenu, isOpen, dataProjects };
-    }
+})
+const { t } = useI18n();
+const isOpen = ref(true);
+const handleExplorerMenu = () => {
+    isOpen.value = !isOpen.value;
 };
+const dataProjects = projects;
 </script>

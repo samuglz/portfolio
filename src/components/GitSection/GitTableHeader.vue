@@ -26,15 +26,13 @@
     </div>
 </template>
 
-<script>
+<script setup>
+import { defineComponent } from 'vue';
 import { useI18n } from 'vue-i18n';
-export default {
-    name: 'GitTeableHeader',
-    setup() {
-        const { t } = useI18n();
-        return { t };
-    }
-};
+const { t } = useI18n();
+defineComponent({
+    name: 'GitTableHeader',
+})
 </script>
 
 <style></style>

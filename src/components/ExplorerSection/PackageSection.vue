@@ -6,20 +6,17 @@
     </div>
 </template>
 
-<script>
-import { reactive, computed } from 'vue';
+<script setup>
+import { reactive, computed, defineComponent } from 'vue';
 import { packages } from '../../data.js';
-export default {
-    name: 'PackageSection',
-    props: {
-        projectName: {
-            type: String
-        }
-    },
-    setup(props) {
-        const packageDetails = reactive(packages);
-        const info = computed(() => packageDetails[props.projectName]);
-        return { info };
+defineComponent({
+    name: 'PackageSection'
+})
+const props = defineProps({
+    projectName: {
+        type: String
     }
-};
+})
+const packageDetails = reactive(packages);
+const info = computed(() => packageDetails[props.projectName]);
 </script>

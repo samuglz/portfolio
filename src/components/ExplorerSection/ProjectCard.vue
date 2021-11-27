@@ -31,39 +31,33 @@
     </div>
 </template>
 
-<script>
-import { ref } from 'vue';
+<script setup>
+import { ref, defineProps } from 'vue';
 import { event } from '../../Events';
-export default {
-    name: 'ProjectCard',
-    props: {
-        title: {
-            type: String,
-            required: true
-        },
-        projectName: {
-            type: String,
-            required: true
-        }
+const props = defineProps({
+    title: {
+        type: String,
+        required: true
     },
-    setup(props) {
-        const clientWidth = document.documentElement.clientWidth;
-        const isOpen = ref(false);
-        const openFolder = () => {
-            isOpen.value = !isOpen.value;
-        };
-        const openMarkdownFile = () => {
-            event.emit('changeCenterScreen', {
-                newSection: 'PackageSection',
-                componentProps: {
-                    projectName: props.projectName
-                }
-            });
-            if (clientWidth < 1024) {
-                event.emit('changeLeftMenuSection', '');
-            }
-        };
-        return { isOpen, openFolder, openMarkdownFile };
+    projectName: {
+        type: String,
+        required: true
+    }
+})
+const clientWidth = document.documentElement.clientWidth;
+const isOpen = ref(false);
+const openFolder = () => {
+    isOpen.value = !isOpen.value;
+};
+const openMarkdownFile = () => {
+    event.emit('changeCenterScreen', {
+        newSection: 'PackageSection',
+        componentProps: {
+            projectName: props.projectName
+        }
+    });
+    if (clientWidth < 1024) {
+        event.emit('changeLeftMenuSection', '');
     }
 };
 </script>

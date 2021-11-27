@@ -25,23 +25,20 @@
     </div>
 </template>
 
-<script>
-import { ref } from 'vue';
-export default {
-    name: 'ArrowButton',
-    props: {
-        opened: {
-            type: Boolean
-        }
-    },
-    setup() {
-        const color = ref('#A6A7AA');
-        const changeColor = value => {
-            color.value = value;
-        };
-        return { changeColor, color };
+<script setup>
+import { ref, defineComponent, defineProps } from 'vue';
+defineComponent({
+    name: 'ArrowButton'
+})
+defineProps({
+    opened: {
+        type: Boolean,
+        required: true
     }
-};
-</script>
+})
 
-<style></style>
+const color = ref('#A6A7AA')
+const changeColor = (value) => {
+    color.value = value
+}
+</script>
