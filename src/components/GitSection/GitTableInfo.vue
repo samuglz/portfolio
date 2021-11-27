@@ -36,29 +36,25 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import GraphPoint from './GraphPoint.vue';
 import 'dayjs/locale/es';
 import 'dayjs/locale/en';
 import dayjs from 'dayjs';
 import { useI18n } from 'vue-i18n';
-export default {
-    name: 'GitTableInfo',
-    props: {
+import { defineProps, defineComponent } from "vue"
+defineComponent({
+    name: 'GitTableInfo'
+})
+defineProps({
         index: { type: Number, required: true },
         totalCommits: { type: Number, required: true },
         description: { type: String, required: true },
         date: { type: Object, required: true },
         hash: { type: String, required: true },
         type: { type: String, required: true }
-    },
-    components: {
-        GraphPoint
-    },
-    setup() {
-        const day = dayjs;
-        const { locale, t } = useI18n();
-        return { day, locale, t };
-    }
-};
+});
+const day = dayjs;
+const { locale, t } = useI18n();
+
 </script>

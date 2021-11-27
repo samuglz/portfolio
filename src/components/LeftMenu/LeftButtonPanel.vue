@@ -8,7 +8,8 @@
     </div>
 </template>
 
-<script>
+<script setup>
+import { defineAsyncComponent } from 'vue';
 const Documents = defineAsyncComponent(() =>
     import('../Buttons/Documents.vue')
 );
@@ -18,16 +19,6 @@ const Extensions = defineAsyncComponent(() =>
 );
 const Github = defineAsyncComponent(() => import('../Buttons/Github.vue'));
 const Profile = defineAsyncComponent(() => import('../Buttons/Profile.vue'));
-import { defineAsyncComponent } from 'vue';
-export default {
-    components: {
-        Documents,
-        Git,
-        Extensions,
-        Github,
-        Profile
-    }
-};
 </script>
 
 <style></style>

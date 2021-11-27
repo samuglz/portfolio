@@ -46,27 +46,23 @@
     </svg>
 </template>
 
-<script>
-import { ref } from 'vue';
+<script setup>
+import { defineComponent, ref } from 'vue';
 import { event } from '../../Events';
-export default {
-    name: 'Git',
-    setup() {
-        const changeSection = () => {
-            event.emit('changeCenterScreen', {
-                newSection: 'GitSection',
-                componentProps: {}
-            });
-            event.emit('changeLeftMenuSection', '');
-        };
-        const color = ref('#A6A7AA');
-        const changeColor = value => {
-            color.value = value;
-        };
 
-        return { changeColor, changeSection, color };
-    }
+defineComponent({
+    name: 'Git',
+})
+
+const changeSection = () => {
+    event.emit('changeCenterScreen', {
+        newSection: 'GitSection',
+        componentProps: {}
+    });
+    event.emit('changeLeftMenuSection', '');
+};
+const color = ref('#A6A7AA');
+const changeColor = value => {
+    color.value = value;
 };
 </script>
-
-<style></style>

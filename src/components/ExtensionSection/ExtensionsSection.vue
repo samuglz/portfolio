@@ -26,29 +26,26 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import { skills } from '../../data.js';
 import { event } from '../../Events';
 import { useI18n } from 'vue-i18n';
-export default {
+import { defineComponent } from 'vue';
+defineComponent({
     name: 'ExtensionsSection',
-    setup() {
-        const clientWidth = document.documentElement.clientWidth;
-        const selectExtension = skill => {
-            event.emit('changeCenterScreen', {
-                newSection: 'CenterExtensionsSection',
-                componentProps: skill
-            });
-            if (clientWidth < 1024) {
-                event.emit('changeLeftMenuSection', '');
-            }
-        };
-        const { t } = useI18n();
-
-        const dataSkills = skills;
-        return { dataSkills, selectExtension, t };
+})
+const clientWidth = document.documentElement.clientWidth;
+const selectExtension = skill => {
+    event.emit('changeCenterScreen', {
+        newSection: 'CenterExtensionsSection',
+        componentProps: skill
+    });
+    if (clientWidth < 1024) {
+        event.emit('changeLeftMenuSection', '');
     }
 };
+const { t } = useI18n();
+const dataSkills = skills;
 </script>
 
 <style scoped>

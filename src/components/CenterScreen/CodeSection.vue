@@ -6,14 +6,8 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import DynamicCenterScreen from '../DynamicContainers/DynamicCenterScreen.vue';
-export default {
-    name: 'Code Section',
-    components: {
-        DynamicCenterScreen
-    }
-};
 </script>
 
 <style></style>

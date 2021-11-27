@@ -10,11 +10,11 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'GraphPoint',
-    props: {
-        first: {
+<script setup>
+import { defineProps } from "vue"
+
+defineProps({
+    first: {
             type: Boolean,
             default: false
         },
@@ -22,8 +22,7 @@ export default {
             type: Boolean,
             default: false
         }
-    }
-};
+})
 </script>
 
 <style scoped>
