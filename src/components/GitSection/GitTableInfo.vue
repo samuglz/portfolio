@@ -15,13 +15,13 @@
         {{
             index === 0
                 ? `${day(`${date.from}`).locale(locale).format('MMM YYYY')} - ${
-                      date.to
-                  }`
+                    date.to
+                }`
                 : `${day(`${date.from}`)
-                      .locale(locale)
-                      .format('MMM YYYY')} - ${day(`${date.to}`)
-                      .locale(locale)
-                      .format('MMM YYYY')}`
+                    .locale(locale)
+                    .format('MMM YYYY')} - ${day(`${date.to}`)
+                    .locale(locale)
+                    .format('MMM YYYY')}`
         }}
     </div>
     <div
@@ -42,17 +42,17 @@ import 'dayjs/locale/es';
 import 'dayjs/locale/en';
 import dayjs from 'dayjs';
 import { useI18n } from 'vue-i18n';
-import { defineProps, defineComponent } from "vue"
+import { defineProps, defineComponent } from 'vue';
 defineComponent({
     name: 'GitTableInfo'
-})
+});
 defineProps({
-        index: { type: Number, required: true },
-        totalCommits: { type: Number, required: true },
-        description: { type: String, required: true },
-        date: { type: Object, required: true },
-        hash: { type: String, required: true },
-        type: { type: String, required: true }
+    index: { type: Number, required: true },
+    totalCommits: { type: Number, required: true },
+    description: { type: String, required: true },
+    date: { type: Object, required: true },
+    hash: { type: String, required: true },
+    type: { type: String, required: true }
 });
 const day = dayjs;
 const { locale, t } = useI18n();

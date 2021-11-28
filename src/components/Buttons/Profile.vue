@@ -1,12 +1,12 @@
 <template>
     <svg
-        @mouseover="changeColor('#FFFFFF')"
-        @mouseleave="changeColor('#A6A7AA')"
-        @click="changeSection"
         class="w-6 md:w-8 cursor-pointer py-5"
         viewBox="0 0 42 42"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        @mouseover="changeColor('#FFFFFF')"
+        @mouseleave="changeColor('#A6A7AA')"
+        @click="changeSection"
     >
         <path
             fill-rule="evenodd"
@@ -27,8 +27,8 @@
 import { defineComponent, ref } from 'vue';
 import { event } from '../../Events';
 defineComponent({
-    name: 'Profile',
-})
+    name: 'Profile'
+});
 const changeSection = () => {
     event.emit('changeCenterScreen', {
         newSection: 'ProfileSection',

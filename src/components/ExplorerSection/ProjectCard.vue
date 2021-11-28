@@ -8,14 +8,16 @@
             class="w-4"
             src="../../assets/img/Close_Folder.svg"
             alt="Close Folder Icon"
-        />
+        >
         <img
             v-show="isOpen"
             class="w-4"
             src="../../assets/img/Open_Folder.svg"
             alt="Open Folder Icon"
-        />
-        <div class="px-2">{{ title }}</div>
+        >
+        <div class="px-2">
+            {{ title }}
+        </div>
     </div>
     <div
         v-show="isOpen"
@@ -26,8 +28,10 @@
             class="w-4"
             src="../../assets/img/Npm_Icon.svg"
             alt="Markdown Icon"
-        />
-        <div class="text-sm px-2">package.json</div>
+        >
+        <div class="text-sm px-2">
+            package.json
+        </div>
     </div>
 </template>
 
@@ -43,7 +47,7 @@ const props = defineProps({
         type: String,
         required: true
     }
-})
+});
 const clientWidth = document.documentElement.clientWidth;
 const isOpen = ref(false);
 const openFolder = () => {

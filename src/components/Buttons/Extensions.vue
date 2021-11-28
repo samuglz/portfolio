@@ -1,12 +1,12 @@
 <template>
     <svg
-        @mouseover="changeColor('#FFFFFF')"
-        @mouseleave="changeColor('#A6A7AA')"
-        @click="changeSection"
         class="w-6 md:w-8 cursor-pointer py-5"
         viewBox="0 0 42 42"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        @mouseover="changeColor('#FFFFFF')"
+        @mouseleave="changeColor('#A6A7AA')"
+        @click="changeSection"
     >
         <path
             d="M2 7.22223H16.6667C17.219 7.22223 17.6667 7.66994 17.6667 8.22223V23.8889H1V8.22223C1 7.66994 1.44771 7.22223 2 7.22223Z"
@@ -35,8 +35,8 @@
 import { ref, defineComponent } from 'vue';
 import { event } from '../../Events';
 defineComponent({
-    name: 'Extensions',
-})
+    name: 'Extensions'
+});
 const changeSection = () => {
     event.emit('changeLeftMenuSection', 'ExtensionsSection');
 };

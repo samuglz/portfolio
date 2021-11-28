@@ -4,7 +4,10 @@
         class="w-40 h-40"
         viewBox="0 0 538.584 538.583"
     >
-        <path d="M0 0h538.584v538.583H0V0z" fill="none" />
+        <path
+            d="M0 0h538.584v538.583H0V0z"
+            fill="none"
+        />
         <path
             d="M405.5 467.454L269.29 504.13l-136.212-36.676-31.432-340.525h335.29L405.5 467.454z"
             fill="#2062af"
@@ -29,8 +32,15 @@
             y2="1419.102"
             gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"
         >
-            <stop offset=".387" stop-color="#d1d3d4" stop-opacity="0" />
-            <stop offset="1" stop-color="#d1d3d4" />
+            <stop
+                offset=".387"
+                stop-color="#d1d3d4"
+                stop-opacity="0"
+            />
+            <stop
+                offset="1"
+                stop-color="#d1d3d4"
+            />
         </linearGradient>
         <path
             d="M171.677 280.258l3.233 40.199 94.257-40.301v-40.5l-97.49 40.602z"
@@ -45,8 +55,15 @@
             y2="1462.591"
             gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"
         >
-            <stop offset=".387" stop-color="#d1d3d4" stop-opacity="0" />
-            <stop offset="1" stop-color="#d1d3d4" />
+            <stop
+                offset=".387"
+                stop-color="#d1d3d4"
+                stop-opacity="0"
+            />
+            <stop
+                offset="1"
+                stop-color="#d1d3d4"
+            />
         </linearGradient>
         <path
             d="M373.59 196.167l-104.422 43.489v40.5l100.265-42.868 4.157-41.121z"
@@ -61,8 +78,14 @@
             y2="1302.263"
             gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"
         >
-            <stop offset="0" stop-color="#e8e7e5" />
-            <stop offset="1" stop-color="#fff" />
+            <stop
+                offset="0"
+                stop-color="#e8e7e5"
+            />
+            <stop
+                offset="1"
+                stop-color="#fff"
+            />
         </linearGradient>
         <path
             d="M171.827 280.258l3.234 40.199 144.625.461-3.235 53.598-47.59 13.398-45.748-11.551-2.772-33.268h-42.508l5.545 64.225 85.945 25.412 85.479-24.951 11.09-127.523H171.827z"
@@ -81,8 +104,14 @@
             y2="1442.031"
             gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"
         >
-            <stop offset="0" stop-color="#e8e7e5" />
-            <stop offset="1" stop-color="#fff" />
+            <stop
+                offset="0"
+                stop-color="#e8e7e5"
+            />
+            <stop
+                offset="1"
+                stop-color="#fff"
+            />
         </linearGradient>
         <path
             d="M162.898 196.167H373.59l-4.157 41.122H167.98l-5.082-41.122z"

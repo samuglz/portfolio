@@ -1,12 +1,12 @@
 <template>
     <svg
-        @mouseover="changeColor('#FFFFFF')"
-        @mouseleave="changeColor('#A6A7AA')"
-        @click="changeSection"
         class="w-6 md:w-8 cursor-pointer py-5"
         viewBox="0 0 32 45"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        @mouseover="changeColor('#FFFFFF')"
+        @mouseleave="changeColor('#A6A7AA')"
+        @click="changeSection"
     >
         <path
             d="M6.34615 11.1923C9.02261 11.1923 11.1923 9.02261 11.1923 6.34615C11.1923 3.6697 9.02261 1.5 6.34615 1.5C3.6697 1.5 1.5 3.6697 1.5 6.34615C1.5 9.02261 3.6697 11.1923 6.34615 11.1923Z"
@@ -51,8 +51,8 @@ import { defineComponent, ref } from 'vue';
 import { event } from '../../Events';
 
 defineComponent({
-    name: 'Git',
-})
+    name: 'Git'
+});
 
 const changeSection = () => {
     event.emit('changeCenterScreen', {

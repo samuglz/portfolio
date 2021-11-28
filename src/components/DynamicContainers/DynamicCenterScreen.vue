@@ -4,7 +4,7 @@
             <component
                 :is="currentComponent"
                 v-bind="currentComponentProps"
-            ></component>
+            />
         </keep-alive>
     </div>
 </template>
@@ -17,18 +17,18 @@ import ProfileSection from '../ProfileSection/ProfileSection.vue';
 import { ref, markRaw } from 'vue';
 import { event } from '../../Events';
 
-const currentComponentProps = ref({})
+const currentComponentProps = ref({});
 const currentComponent = ref(null);
-currentComponent.value = markRaw(ProfileSection)
+currentComponent.value = markRaw(ProfileSection);
 const sections = {
     GitSection,
     CenterExtensionsSection,
     ProfileSection,
     PackageSection
-}
+};
 
 event.on('changeCenterScreen', ({ newSection, componentProps }) => {
-    currentComponent.value = markRaw(sections[newSection])
-    currentComponentProps.value = componentProps
-})
+    currentComponent.value = markRaw(sections[newSection]);
+    currentComponentProps.value = componentProps;
+});
 </script>

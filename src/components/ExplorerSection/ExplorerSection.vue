@@ -10,11 +10,17 @@
             <ArrowButton :opened="isOpen" />
             <div>{{ t('explorer.submenu') }}</div>
         </div>
-        <div v-show="isOpen" class="bg-background w-full">
-            <template v-for="project in dataProjects" :key="project.id">
+        <div
+            v-show="isOpen"
+            class="bg-background w-full"
+        >
+            <template
+                v-for="project in dataProjects"
+                :key="project.id"
+            >
                 <ProjectCard
                     :title="project.title"
-                    :projectName="project.readme"
+                    :project-name="project.readme"
                 />
             </template>
         </div>
@@ -28,8 +34,8 @@ import ProjectCard from './ProjectCard.vue';
 import ArrowButton from '../Buttons/ArrowButton.vue';
 import { useI18n } from 'vue-i18n';
 defineComponent({
-    name: 'ExplorerSection',
-})
+    name: 'ExplorerSection'
+});
 const { t } = useI18n();
 const isOpen = ref(true);
 const handleExplorerMenu = () => {

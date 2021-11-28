@@ -3,8 +3,8 @@
         <suspense :key="id">
             <template #default>
                 <Skill
-                    :icon="icon"
                     :id="id"
+                    :icon="icon"
                     :description="description"
                     :rate="rate"
                 />
@@ -17,24 +17,28 @@
 </template>
 
 <script setup>
-import { defineComponent } from 'vue';
+import { defineComponent, defineProps } from 'vue';
 import Loader from '../Loader.vue';
 import Skill from './Skill.vue';
 defineComponent({
-    name: 'CenterExtensionsSection',
-})
+    name: 'CenterExtensionsSection'
+});
 defineProps({
     icon: {
-        type: String
+        type: String,
+        required: true
     },
     id: {
-        type: Number
+        type: Number,
+        required: true
     },
     description: {
-        type: String
+        type: String,
+        required: true
     },
     rate: {
-        type: Number
+        type: Number,
+        required: true
     }
-})
+});
 </script>

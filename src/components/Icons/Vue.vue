@@ -22,7 +22,7 @@
 
 <script>
 export default {
-    name: 'Vue'
+    name: 'VueIcon'
 };
 </script>
 

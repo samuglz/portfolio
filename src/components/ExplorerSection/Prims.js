@@ -16,7 +16,7 @@ export default Vue.defineComponent({
             default: 'markup'
         }
     },
-    setup(props, { slots, attrs }) {
+    setup (props, { slots, attrs }) {
         const { h } = Vue;
         const slotsData = (slots && slots.default && slots.default()) || [];
         const code =

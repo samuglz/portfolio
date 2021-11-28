@@ -5,18 +5,20 @@
             @click="handleMenu"
         >
             <img
-                class="w-4"
                 v-show="locale === 'es'"
+                class="w-4"
                 src="../../assets/img/Spain_Icon.svg"
                 alt="Spain Flag"
-            />
+            >
             <img
-                class="w-4"
                 v-show="locale === 'en'"
+                class="w-4"
                 src="../../assets/img/US_Icon.svg"
                 alt="US Flag"
-            />
-            <div class="uppercase mx-1 font-bold">{{ locale }}</div>
+            >
+            <div class="uppercase mx-1 font-bold">
+                {{ locale }}
+            </div>
         </div>
         <div
             v-show="isOpen"
@@ -27,12 +29,15 @@
                 @click="changeLocale('es')"
             >
                 <img
-                    class="w-4"
                     v-show="locale !== 'es'"
+                    class="w-4"
                     src="../../assets/img/Spain_Icon.svg"
                     alt="Spain Flag"
-                />
-                <div v-show="locale === 'en'" class="uppercase mx-1 font-bold">
+                >
+                <div
+                    v-show="locale === 'en'"
+                    class="uppercase mx-1 font-bold"
+                >
                     es
                 </div>
             </div>
@@ -41,12 +46,15 @@
                 @click="changeLocale('en')"
             >
                 <img
-                    class="w-4"
                     v-show="locale !== 'en'"
+                    class="w-4"
                     src="../../assets/img/US_Icon.svg"
                     alt="US Flag"
-                />
-                <div v-show="locale === 'es'" class="uppercase mx-1 font-bold">
+                >
+                <div
+                    v-show="locale === 'es'"
+                    class="uppercase mx-1 font-bold"
+                >
                     en
                 </div>
             </div>
@@ -58,8 +66,8 @@
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 export default {
-    name: 'translation',
-    setup() {
+    name: 'Translation',
+    setup () {
         const { locale } = useI18n();
         const isOpen = ref(false);
         const handleMenu = () => {

@@ -1,9 +1,9 @@
 <template>
     <div
-        class="w-52 h-center-screen md:relative absolute md:z-0 z-20 left-14 md:left-0 bg-background"
         v-if="section !== ''"
+        class="w-52 h-center-screen md:relative absolute md:z-0 z-20 left-14 md:left-0 bg-background"
     >
-        <component :is="section"></component>
+        <component :is="section" />
     </div>
 </template>
 
@@ -15,12 +15,11 @@ import ExplorerSection from '../ExplorerSection/ExplorerSection.vue';
 import ExtensionsSection from '../ExtensionSection/ExtensionsSection.vue';
 const sections = {
     ExplorerSection,
-    ExtensionsSection,
+    ExtensionsSection
 };
-const section = ref('')
+const section = ref('');
 event.on('changeLeftMenuSection', newSection => {
-    if(newSection !== '') section.value = markRaw(sections[newSection]);
-    
+    if (newSection !== '') section.value = markRaw(sections[newSection]);
 });
 </script>
 

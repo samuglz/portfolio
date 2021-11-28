@@ -20,7 +20,7 @@
                     class="w-4"
                     src="../../assets/img/Setting_Icon.svg"
                     alt="Settings Icon"
-                />
+                >
             </div>
         </div>
     </div>
@@ -32,8 +32,8 @@ import { event } from '../../Events';
 import { useI18n } from 'vue-i18n';
 import { defineComponent } from 'vue';
 defineComponent({
-    name: 'ExtensionsSection',
-})
+    name: 'ExtensionsSection'
+});
 const clientWidth = document.documentElement.clientWidth;
 const selectExtension = skill => {
     event.emit('changeCenterScreen', {

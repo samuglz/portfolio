@@ -1,15 +1,23 @@
 <template>
     <div class="w-full h-full flex flex-col justify-center items-center">
-        <component :is="icon"></component>
+        <component :is="icon" />
         <div class="py-10 w-3/4 flex flex-col justify-center items-center">
             <div class="text-base md:text-xl text-center text-menu-color">
                 {{ t(description) }}
             </div>
             <div class="mt-20 flex justify-center items-center">
-                <div class="px-2" v-for="n in rate" :key="n">
+                <div
+                    v-for="n in rate"
+                    :key="n"
+                    class="px-2"
+                >
                     <Rating class="md:w-14 md:h-14 w-8 h-8" />
                 </div>
-                <div class="px-2" v-for="n in 5 - rate" :key="n">
+                <div
+                    v-for="n in 5 - rate"
+                    :key="n"
+                    class="px-2"
+                >
                     <StrokeRating class="md:w-14 md:h-14 w-8 h-8" />
                 </div>
             </div>
@@ -19,6 +27,7 @@
 
 <script>
 import { defineAsyncComponent } from 'vue';
+import { useI18n } from 'vue-i18n';
 const HTML = defineAsyncComponent(() => import('../Icons/HtmlIcon.vue'));
 const CSS = defineAsyncComponent(() => import('../Icons/CSS.vue'));
 const JS = defineAsyncComponent(() => import('../Icons/Javascript.vue'));
@@ -31,7 +40,6 @@ const Graphql = defineAsyncComponent(() => import('../Icons/Graphql.vue'));
 const StrokeRating = defineAsyncComponent(() =>
     import('../Icons/StrokeRating.vue')
 );
-import { useI18n } from 'vue-i18n';
 export default {
     name: 'CenterExtensionsSection',
     components: {
@@ -48,19 +56,23 @@ export default {
     },
     props: {
         icon: {
-            type: String
+            type: String,
+            required: true
         },
         id: {
-            type: Number
+            type: Number,
+            required: true
         },
         description: {
-            type: String
+            type: String,
+            required: true
         },
         rate: {
-            type: Number
+            type: Number,
+            required: true
         }
     },
-    setup() {
+    setup () {
         const { t } = useI18n();
         return { t };
     }

@@ -9,7 +9,7 @@
                 class="w-4 h-4 mr-3"
                 src="../../assets/img/Lock_Icon.svg"
                 alt="Lock Icon"
-            />
+            >
             <p>About.me</p>
         </div>
     </div>

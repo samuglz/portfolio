@@ -5,12 +5,12 @@
         rel="noopener noreferrer"
     >
         <svg
-            @mouseover="changeColor('#FFFFFF')"
-            @mouseleave="changeColor('#A6A7AA')"
             class="w-8 cursor-pointer"
             viewBox="0 0 22 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            @mouseover="changeColor('#FFFFFF')"
+            @mouseleave="changeColor('#A6A7AA')"
         >
             <path
                 fill-rule="evenodd"
@@ -25,8 +25,8 @@
 <script setup>
 import { defineComponent, ref } from 'vue';
 defineComponent({
-    name: 'Linkedin',
-})
+    name: 'Linkedin'
+});
 const color = ref('#A6A7AA');
 const changeColor = value => {
     color.value = value;

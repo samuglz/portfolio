@@ -31,8 +31,8 @@ import { defineComponent } from 'vue';
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 defineComponent({
-    name: 'GitTableHeader',
-})
+    name: 'GitTableHeader'
+});
 </script>
 
 <style></style>

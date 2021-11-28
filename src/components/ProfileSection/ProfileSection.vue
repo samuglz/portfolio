@@ -8,7 +8,7 @@
                 class="w-40 h-40 md:w-96 md:h-96 rounded-full"
                 src="../../assets/img/profile.jpg"
                 alt="Profile pictures"
-            />
+            >
             <div class="text-xl md:text-6xl mt-10 text-center">
                 Samuel González Alonso
             </div>

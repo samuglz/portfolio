@@ -9,7 +9,6 @@
 </template>
 
 <script setup>
-// import { defineAsyncComponent } from 'vue';
 import Documents from '../Buttons/Documents.vue';
 import Git from '../Buttons/Git.vue';
 import Github from '../Buttons/Github.vue';

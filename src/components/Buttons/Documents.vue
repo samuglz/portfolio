@@ -1,12 +1,12 @@
 <template>
     <svg
-        @mouseover="changeColor('#FFFFFF')"
-        @mouseleave="changeColor('#A6A7AA')"
-        @click="changeSection"
         class="w-6 md:w-8 cursor-pointer pt-2 pb-5"
         viewBox="0 0 41 44"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        @mouseover="changeColor('#FFFFFF')"
+        @mouseleave="changeColor('#A6A7AA')"
+        @click="changeSection"
     >
         <rect
             x="1.5"
@@ -23,7 +23,11 @@
             :stroke="color"
             stroke-width="3"
         />
-        <path d="M32 9.5V3L37.5 9.5H32Z" :stroke="color" stroke-width="2" />
+        <path
+            d="M32 9.5V3L37.5 9.5H32Z"
+            :stroke="color"
+            stroke-width="2"
+        />
     </svg>
 </template>
 
@@ -31,8 +35,8 @@
 import { defineComponent, ref } from 'vue';
 import { event } from '../../Events';
 defineComponent({
-    name: 'DocumentButton',
-})
+    name: 'DocumentButton'
+});
 const changeSection = () => {
     event.emit('changeLeftMenuSection', 'ExplorerSection');
 };
