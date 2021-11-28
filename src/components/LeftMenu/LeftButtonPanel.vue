@@ -3,7 +3,6 @@
         <Documents />
         <Git />
         <Extensions />
-        <Github />
         <Profile />
     </div>
 </template>
@@ -11,7 +10,7 @@
 <script setup>
 import Documents from '../Buttons/Documents.vue';
 import Git from '../Buttons/Git.vue';
-import Github from '../Buttons/Github.vue';
+
 import Extensions from '../Buttons/Extensions.vue';
 import Profile from '../Buttons/Profile.vue';
 </script>

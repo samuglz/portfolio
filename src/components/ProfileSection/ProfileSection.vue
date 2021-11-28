@@ -24,6 +24,7 @@
             <div class="flex items-center justify-between w-40 mt-10">
                 <Twitter />
                 <Linkedin />
+                <Github />
             </div>
         </div>
     </div>
@@ -33,6 +34,7 @@
 import Navbar from './NavBar.vue';
 import Twitter from '../Buttons/Twitter.vue';
 import Linkedin from '../Buttons/Linkedin.vue';
+import Github from '../Buttons/Github.vue';
 
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
