@@ -5,7 +5,7 @@
         rel="noopener noreferrer"
     >
         <svg
-            class="w-6 md:w-8 cursor-pointer py-5"
+            class="w-8 cursor-pointer py-5"
             viewBox="0 0 42 42"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@
 <script setup>
 import { defineComponent, ref } from 'vue';
 defineComponent({
-    name: 'Github'
+    name: 'GithubIcon'
 });
 const color = ref('#A6A7AA');
 const changeColor = value => {
