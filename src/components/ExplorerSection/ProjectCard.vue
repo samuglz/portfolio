@@ -25,12 +25,12 @@
         @click="openMarkdownFile"
     >
         <img
-            class="w-4"
-            src="../../assets/img/Npm_Icon.svg"
+            class="w-6"
+            src="../../assets/img/markdown.svg"
             alt="Markdown Icon"
         >
         <div class="text-sm px-2">
-            package.json
+            Readme.md
         </div>
     </div>
 </template>

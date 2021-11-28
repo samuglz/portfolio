@@ -19,7 +19,11 @@ const sections = {
 };
 const section = ref('');
 event.on('changeLeftMenuSection', newSection => {
-    if (newSection !== '') section.value = markRaw(sections[newSection]);
+    if (newSection !== '') {
+        section.value = markRaw(sections[newSection]);
+    } else {
+        section.value = '';
+    }
 });
 </script>
 

@@ -10,7 +10,8 @@
         "dayjs": "^1.10.7",
         "mitt": "^3.0.0",
         "vue": "^3.2.23",
-        "vue-i18n": "^9.2.0-beta.22"
+        "vue-i18n": "^9.2.0-beta.22",
+        "vue3-markdown-it": "^1.0.9"
     },
     "devDependencies": {
         "@intlify/vite-plugin-vue-i18n": "^2.1.2",
@@ -26,6 +27,7 @@
         "eslint-plugin-vue": "^8.1.1",
         "postcss": "^8.2.10",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
-        "vite": "^2.6.14"
+        "vite": "^2.6.14",
+        "vite-plugin-md": "^0.11.4"
     }
 }
