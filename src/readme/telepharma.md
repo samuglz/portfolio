@@ -2,7 +2,7 @@
 
 ### [Github Repo](https://github.com/samuglz/Telepharma) [Deploy Site](https://telepharma.netlify.app/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d8acc56a-1cb9-4149-9af7-a716ca5d8eee/deploy-status)](https://app.netlify.com/sites/samuglz/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4ab543eb-ee38-4f7f-8318-9a7b7747ef8f/deploy-status)](https://app.netlify.com/sites/telepharma/deploys)
 
 Pharmaceutical product sales application, developed as a final project of the [EOI course](https://www.eoi.es/es).
 
