@@ -7,29 +7,21 @@
     </div>
 </template>
 
-<script>
-import { ref } from 'vue';
+<script setup>
+import { markRaw, ref } from 'vue';
 import { event } from '../../Events';
 
 import ExplorerSection from '../ExplorerSection/ExplorerSection.vue';
 import ExtensionsSection from '../ExtensionSection/ExtensionsSection.vue';
-
-export default {
-    name: 'DynamicContainer',
-    components: {
-        ExplorerSection,
-        ExtensionsSection
-    },
-    setup() {
-        const section = ref('');
-
-        event.on('changeLeftMenuSection', newSection => {
-            section.value = newSection;
-        });
-
-        return { section };
-    }
+const sections = {
+    ExplorerSection,
+    ExtensionsSection,
 };
+const section = ref('')
+event.on('changeLeftMenuSection', newSection => {
+    if(newSection !== '') section.value = markRaw(sections[newSection]);
+    
+});
 </script>
 
 <style scoped>
