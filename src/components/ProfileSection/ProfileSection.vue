@@ -21,7 +21,7 @@
             >
                 Currículum Vitae
             </a>
-            <div class="flex items-center w-full justify-evenly mt-10">
+            <div class="flex items-center justify-between w-40 mt-10">
                 <Twitter />
                 <Linkedin />
             </div>
