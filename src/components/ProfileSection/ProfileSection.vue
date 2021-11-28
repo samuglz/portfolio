@@ -30,16 +30,10 @@
 </template>
 
 <script setup>
-import { defineAsyncComponent, defineComponent } from 'vue';
-const Navbar = defineAsyncComponent(() => import('./NavBar.vue'));
-const Twitter = defineAsyncComponent(() => import('../Buttons/Twitter.vue'));
-const Linkedin = defineAsyncComponent(() => import('../Buttons/Linkedin.vue'));
+import Navbar from './NavBar.vue';
+import Twitter from '../Buttons/Twitter.vue';
+import Linkedin from '../Buttons/Linkedin.vue';
 
 import { useI18n } from 'vue-i18n';
-defineComponent({
-    name: 'ProfileSection'
-})
 const { t } = useI18n();
 </script>
-
-<style></style>
