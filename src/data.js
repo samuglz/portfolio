@@ -128,10 +128,19 @@ export const commitsInfo = [
     {
         date: {
             from: '2020-07',
-            to: 'Today'
+            to: '2021-12'
         },
         type: 'git.job',
         description: 'Integra Cloud Technologies',
+        hash: ''
+    },
+    {
+        date: {
+            from: '2021-12',
+            to: 'Today'
+        },
+        type: 'git.job',
+        description: 'Azertium IT Global Services',
         hash: ''
     }
 ];
