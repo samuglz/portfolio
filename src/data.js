@@ -46,6 +46,12 @@ export const skills = [
         id: 8,
         description: 'skills.graphql',
         rate: 2
+    },
+    {
+        icon: 'Svelte',
+        id: 9,
+        description: 'skills.svelte',
+        rate: 1
     }
 ];
 

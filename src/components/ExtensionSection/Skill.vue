@@ -38,8 +38,9 @@ const Git = defineAsyncComponent(() => import('../Icons/Git.vue'));
 const Rating = defineAsyncComponent(() => import('../Icons/Rating.vue'));
 const Graphql = defineAsyncComponent(() => import('../Icons/Graphql.vue'));
 const StrokeRating = defineAsyncComponent(() =>
-    import('../Icons/StrokeRating.vue')
-);
+    import('../Icons/StrokeRating.vue'));
+const Svelte = defineAsyncComponent(() => import('../Icons/Svelte.vue'));
+
 export default {
     name: 'CenterExtensionsSection',
     components: {
@@ -52,7 +53,8 @@ export default {
         Figma,
         Rating,
         StrokeRating,
-        Graphql
+        Graphql,
+        Svelte
     },
     props: {
         icon: {

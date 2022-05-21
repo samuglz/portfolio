@@ -6,5 +6,6 @@
     "vue": "Vue.js es un framework de JavaScript de código abierto para la construcción de interfaces de usuario y aplicaciones de una sola página.",
     "figma": "Figma es un editor de gráficos vectoriales y una herramienta de creación de prototipos que se basa principalmente en la web, con funciones adicionales sin conexión habilitadas por aplicaciones de escritorio para macOS y Windows.",
     "git": "Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente.",
-    "graphql": "GraphQL es un lenguaje de consulta y manipulación de datos para APIs, y un entorno de ejecución para realizar consultas con datos existentes.​"
+    "graphql": "GraphQL es un lenguaje de consulta y manipulación de datos para APIs, y un entorno de ejecución para realizar consultas con datos existentes.​",
+    "svelte": "Svelte es un compilador Front End gratuito y de código abierto \u200B creado por Rich Harris y mantenido por los miembros del equipo central de Svelte."
 }
