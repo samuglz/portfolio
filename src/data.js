@@ -80,6 +80,11 @@ export const projects = [
         id: 5,
         title: 'Template Generator',
         readme: 'templateGenerator'
+    },
+    {
+        id: 6,
+        title: 'Wordle Clone',
+        readme: 'wordle'
     }
 ];
 

@@ -13,6 +13,7 @@ import coronavirus from '../../readme/coronavirus-stats.md';
 import telepharma from '../../readme/telepharma.md';
 import instaupload from '../../readme/instauploader.md';
 import templateGenerator from '../../readme/vscode-template-file-generator.md';
+import wordle from '../../readme/wordle.md';
 
 const props = defineProps({
     projectName: {
@@ -27,7 +28,8 @@ const readme = computed(() => {
         coronavirus,
         telepharma,
         instaupload,
-        templateGenerator
+        templateGenerator,
+        wordle
     };
 
     return readmeFiles[props.projectName];
