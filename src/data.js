@@ -148,10 +148,19 @@ export const commitsInfo = [
     {
         date: {
             from: '2021-12',
-            to: 'Today'
+            to: '2022-06'
         },
         type: 'git.job',
         description: 'Azertium IT Global Services',
+        hash: ''
+    },
+    {
+        date: {
+            from: '2022-06',
+            to: 'Today'
+        },
+        type: 'git.job',
+        description: 'Aplicaciones Informaticas Domingo Alonso (AIDA)',
         hash: ''
     }
 ];
