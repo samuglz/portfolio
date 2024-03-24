@@ -1,9 +1,9 @@
 # InstaUploader - Image Upload Application
 
-### [Github Repo](https://github.com/samuglz/react-coronavirus-stats)
+### [Github Repo](https://github.com/samuglz/InstaUploader)
 
 
-A application from a [devchallenges.io](https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx)
+An application from a [devchallenges.io](https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx)
 
 Technologies:
 ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
